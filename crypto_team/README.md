@@ -123,7 +123,7 @@ Learn more about our projects!
 Checkout the link
 </p>
 </details>
-<details><summary>SyferText</summary>
+<details><summary><a href="https://github.com/OpenMined/SyferText">SyferText</a></summary>
 <p>
 More coming soon
 </p>
