@@ -39,7 +39,7 @@ The NLP Team, in collaboration with the [Crypto Team](https://github.com/OpenMin
 </table>
 
 
-## Short-Term goals 
+## Short-Term Goals 
 
 Here are some of the main SyferText features we are working on currently:
 
