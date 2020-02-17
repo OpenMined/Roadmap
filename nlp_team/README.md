@@ -15,21 +15,21 @@ The NLP Team, in collaboration with the [Crypto Team](https://github.com/OpenMin
   <tr>
     <td align="center">
       <a href="https://github.com/AlanAboudib">
-        <img src="https://avatars1.githubusercontent.com/u/11991643?s=240" width="170px;" alt="">
+        <img src="https://avatars1.githubusercontent.com/u/11991643?s=240" width="170px;" alt="Alan Aboudib avatar">
         <br /><sub><b>Alan Aboudib</b></sub></a><br />
         <sub>Team Lead / SyferText</sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/dzlab">
-        <img src="https://avatars0.githubusercontent.com/u/1645304?s=400&v=4" width="170px;" alt="Théo Ryffel">
+        <img src="https://avatars0.githubusercontent.com/u/1645304?s=400&v=4" width="170px;" alt="Bachir Chihani avatar">
         <br /><sub><b>Bachir Chihani</b></sub></a><br />
         <sub>SyferText</sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/MarcioPorto">
-        <img src="https://avatars1.githubusercontent.com/u/6521281?s=400&v=4" width="170px;" alt="">
+        <img src="https://avatars1.githubusercontent.com/u/6521281?s=400&v=4" width="170px;" alt="Marcio Porto avatar">
         <br /><sub><b>Márcio Porto</b></sub></a><br />
         <sub>SyferText</sub>
       </a>
