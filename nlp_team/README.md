@@ -35,7 +35,6 @@ The NLP Team, in collaboration with the [Crypto Team](https://github.com/OpenMin
       </a>
     </td>
   </tr>
-  <tr>
 </table>
 
 
@@ -67,6 +66,7 @@ Demo on sentiment analysis with SyferText on multiple private datasets.
 - **(May 13th)**: [OpenMined AMA](https://www.youtube.com/channel/UCzoUqDE_OzYo6lGXtsEbOxQ).
 
 
+
 ## Joining the Team
 
 If our roadmap gets you excited about SyferText and if you share our vision in building an NLP library that respects and protects data privacy, you can start contributing to any of OpenMined's [open source projects](https://github.com/OpenMined) (including SyferText). Once you merge your first PR in any of these projects,  you can apply to  join our team by filling out [this form](https://forms.gle/1t5Bvj1FFpvFEt2P9).
@@ -82,3 +82,4 @@ If you think that SyferText, in its current state or by adding more features, co
 You can reach out to us by contacting Alan on one of the following channels:
 
  [LinkedIn](https://www.linkedin.com/in/ala-aboudib/) | [Slack](https://app.slack.com/client/T6963A864/DDKH3SXKL/user_profile/UDKH3SH8S) | [Twitter](https://twitter.com/alan_aboudib)
+

@@ -23,21 +23,12 @@ The team leader is [**Patrick Cason**](https://github.com/cereallarceny). Our te
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/karlhigley">
-        <img src="https://avatars2.githubusercontent.com/u/885295?v=4" width="100px;" alt="">
-        <br /><sub><b>Karl Higley</b></sub></a><br />
-        <sub>PySyft and syft-proto</sub>
-      </a>
-    </td>
-    <td align="center">
       <a href="https://github.com/Prtfw">
         <img src="https://avatars1.githubusercontent.com/u/13193437?v=4" width="100px;" alt="">
         <br /><sub><b>Maddie Shang</b></sub></a><br />
         <sub>PySyft, PyGrid</sub>
       </a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/mjjimenez">
         <img src="https://avatars3.githubusercontent.com/u/4151269?v=4" width="100px;" alt="">
@@ -45,6 +36,8 @@ The team leader is [**Patrick Cason**](https://github.com/cereallarceny). Our te
         <sub>SwiftSyft</sub>
       </a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://github.com/Nolski">
         <img src="https://avatars3.githubusercontent.com/u/2600677?v=4" width="100px;" alt="">
