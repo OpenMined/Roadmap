@@ -10,7 +10,7 @@ When Privacy-Preserving Machine Learning (PPML) arrives into the mainstream, the
 
 ## Our roadmap for 2020
 
-<details><summary><b>COVID-10 Self-Sovereign Identity (SSI)</b></summary>
+<details><summary><b>COVID-19 Self-Sovereign Identity (SSI)</b></summary>
 <p>
 We aim to create free education and tools aimed at onboarding COVID app developers into working with self-sovereign identity (SSI) principles:
 
