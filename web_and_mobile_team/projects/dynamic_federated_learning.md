@@ -1,6 +1,6 @@
 ## Introduction
 
-_Last modified: April 6th, 2020_
+_Last modified: April 24th, 2020_
 
 Dynamic federated learning is one of the primary use-cases of the OpenMined ecosystem. By allowing data scientists to search for and ETL remote datasets, so they can train models on data they literally "cannot see".
 
@@ -58,7 +58,7 @@ To start, an individual or organization must deploy their own PyGrid network com
 # 2. Deploy this PyGrid network to a cloud provider or private cloud network
 ```
 
-At this point, there is a fully-hosted PyGrid network running in the cloud. It's time to host data within that network and create helpful tags so that a data scientist requesting model training can appropriately request only relevant datasets.
+At this point, there is a fully-hosted PyGrid network [running in the cloud](cloud_deployment.md). It's time to host data within that network and create helpful tags so that a data scientist requesting model training can appropriately request only relevant datasets.
 
 ```python
 # 1. Connect to this deployed PyGrid network as an administrator
@@ -99,13 +99,13 @@ The network administrator role isn't tied to access control of one specific gate
 
 It's worth noting that there is no "Network Owner" role. This is to allow for a natural delegation of responsibility, without giving any one user too much control. The "Gateway Owner" is the master of their gateway. The "Network Administrator" is the master of the network, but does not have access to any of the gateways themselves.
 
-Such an organizational example might be that various hospitals host their own gateways, but a data scientist may choose to query multiple different hospitals that are part of the same network. It's important here that the person who runs the network, doesn't run all the hospitals within the network.
+Such an organizational example might be that various hospitals host their own gateways, but a data scientist may choose to query multiple different hospitals that are part of the same network. It's important here that the person who runs the network, doesn't run all the hospitals within the network. Permissions are discussed at [much greater detail here](common/pygrid_permissions.md).
 
 ### 3. Search
 
 Once PyGrid has been hosted, tensors have been uploaded, users have been created, and permissions have been set, data scientists may begin making requests to the gateway. This process begins with a simple search of what datasets the data scientist may be interested in. Once they've searched the gateway and have found a tensor they would like to work with, they may begin provisioning compute resources and start working.
 
-TODO: @iamtrask Clear up the differences in this document between datasets and tensors
+TODO: @iamtrask We need to clear up the differences in this document between datasets and tensors. I'm using those terms interchangibly here and I think I should decide on a more specific usage.
 
 ```python
 # 1. Log into the PyGrid gateway
@@ -137,18 +137,18 @@ Once they are satisfied with the result, they may call `get()` to make a request
 
 It's important for a data compliance officer to have control over what data leaves their system. This person's primary job is to read through a model trained on the system, look at the effect that training the model had on their system's privacy leakage, and then determine whether or not the release of this trained model should be allowed. It's also worth nothing that a data scientist who makes a `get()` request for a dataset that exceeds their alotted privacy budget will be automatically denied.
 
-If the the data compliance officer agrees that the privacy leakage is appropriate, they can choose to fulfill the `get()` request and release the trained model back to the data scientist. This is done through the PyGrid Admin UI. Optionally, they may choose to deny this request and the data scientist will be notified of the decision. Currently, the way this decision is communicated between the data compliance officer and the data scientist is arbitrary and determined by the individual relationship of those two individuals. It's outside the scope of this roadmap to prescribe a communication gateway for these individuals.
+If the the data compliance officer agrees that the privacy leakage is appropriate, they can choose to fulfill the `get()` request and release the trained model back to the data scientist. This is done through the PyGrid Admin UI. Optionally, they may choose to deny this request and the data scientist will be notified of the decision. Currently, the way this decision is communicated between the data compliance officer and the data scientist is arbitrary and determined by the individual relationship of those two individuals. It's outside the scope of this roadmap to prescribe a communication gateway for these individuals. Privacy budgeting is discussed at [much greater detail here](common/privacy_budgeting.md).
 
 ## Projects
 
 ### PyGrid
 
-- [Hello world](https://google.com)
+- [INSERT ISSUES HERE](https://google.com)
 
 ### PySyft
 
-- [Hello world](https://google.com)
+- [INSERT ISSUES HERE](https://google.com)
 
 ### PyGrid Admin UI
 
-- [Hello world](https://google.com)
+- [INSERT ISSUES HERE](https://google.com)
