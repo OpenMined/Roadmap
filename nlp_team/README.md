@@ -14,27 +14,52 @@ The NLP Team, in collaboration with the [Crypto Team](https://github.com/OpenMin
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/AlanAboudib">
+      <a href="https://twitter.com/alan_aboudib">
         <img src="https://avatars1.githubusercontent.com/u/11991643?s=240" width="170px;" alt="Alan Aboudib avatar">
         <br /><sub><b>Alan Aboudib</b></sub></a><br />
-        <sub>Team Lead / SyferText</sub>
+        <sub>Team Lead / Author</sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/dzlab">
         <img src="https://avatars0.githubusercontent.com/u/1645304?s=400&v=4" width="170px;" alt="Bachir Chihani avatar">
         <br /><sub><b>Bachir Chihani</b></sub></a><br />
-        <sub>SyferText</sub>
+        <sub>OM NLP Team / Contributor</sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/MarcioPorto">
         <img src="https://avatars1.githubusercontent.com/u/6521281?s=400&v=4" width="170px;" alt="Marcio Porto avatar">
         <br /><sub><b>Márcio Porto</b></sub></a><br />
-        <sub>SyferText</sub>
+        <sub>OM NLP team / Contributor</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Nilanshrajput">
+        <img src="https://avatars0.githubusercontent.com/u/28673745?s=400&u=4573311779fc3cc924670e3e02108e35350c1f25&v=4"  width="170px;" alt="Nilansh Rajput avatar">
+        <br /><sub><b>Nilansh Rajput</b></sub></a><br />
+        <sub>OM NLP team / Contributor</sub>
       </a>
     </td>
   </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/sachin-101">
+        <img src="https://avatars1.githubusercontent.com/u/44168164?s=400&u=df1c9d775a3312cacd4b330f469773e23260eb28&v=4"  width="170px;" alt="Sachin Kumar avatar">
+        <br /><sub><b>Sachin Kumar</b></sub></a><br />
+        <sub>OM NLP team / Contributor</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/bicycleman15">
+        <img src="https://avatars0.githubusercontent.com/u/47978882?s=400&u=521e48efe1a9a652f4449f64278b690aa27dfe03&v=4"  width="170px;" alt="Jatin Prakash avatar">
+        <br /><sub><b>Jatin Prakash</b></sub></a><br />
+        <sub>OM NLP team / Contributor</sub>
+      </a>
+    </td>
+  </tr>
+  
+  
 </table>
 
 
@@ -42,13 +67,13 @@ The NLP Team, in collaboration with the [Crypto Team](https://github.com/OpenMin
 
 Here are some of the main SyferText features we are working on currently:
 
-1. Perform the first encrypted federated training of a logistic regression model on two remote datasets (subsets of SST-2). *(Before March 19th 2020)*
+1. PyGrid integration.
 
-2. Validate that such concurrent training on two datasets can boost performance compared to pretraining on one and fine tuning on the other. *(Before March 19th 2020)*
+2. Validate that such concurrent training on two datasets can boost performance compared to pretraining on one and fine tuning on the other. 
 
-3. The ability to add the trained model to a pipeline of models that operate an a document. *(Before March 19th 2020)*
+3. The ability to create word embedding from multiple private datasets.
 
-4. The ability to dump/load a language model with all of its pipes to/from disk. *(Before May 13th 2020)*
+4. The ability to dump/load a language model with all of its pipes to/from disk. 
 
 
 ## Events
@@ -60,7 +85,7 @@ Demo on remote blind tokenization with SyferText.
 
 - **(March 19th, 2020)** [GDG Meetup, Reading, UK](https://www.meetup.com/GDG-Reading-Thames-Valley/events/268137223/).
 
-Demo on sentiment analysis with SyferText on multiple private datasets.
+Demo on sentiment analysis with SyferText on multiple private datasets. *(Cancelled due to COVID-19)*
 
 
 - **(May 13th)**: [OpenMined AMA](https://www.youtube.com/channel/UCzoUqDE_OzYo6lGXtsEbOxQ).
