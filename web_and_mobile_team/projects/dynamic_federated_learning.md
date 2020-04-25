@@ -2,13 +2,13 @@
 
 _Last modified: April 24th, 2020_
 
-Dynamic federated learning is one of the primary use-cases of the OpenMined ecosystem. By allowing data scientists to search for and ETL remote datasets, so they can train models on data they literally "cannot see".
+Dynamic federated learning is one of the primary use-cases of the OpenMined ecosystem. By allowing data scientists to search for and ETL remote tensors, so they can train models on data they literally "cannot see".
 
-In this concept, a data owner may allow a data scientist (internal to their organization, or external) to submit their model for training, all while tracking and permissioning their usage at a granular level. Doing such training does not permit the data scientist to steal the private, and often sensitive, information of the data owner. It is noteworthy that in this setting, we assume that the data owner is a trusted organization and that future extensions of this project will enable the use of encrypted computation for joint protection of the model and dataset during training.
+In this concept, a data owner may allow a data scientist (internal to their organization, or external) to submit their model for training, all while tracking and permissioning their usage at a granular level. Doing such training does not permit the data scientist to steal the private, and often sensitive, information of the data owner. It is noteworthy that in this setting, we assume that the data owner is a trusted organization and that future extensions of this project will enable the use of encrypted computation for joint protection of the model and tensors during training.
 
-For this process to work correctly, the data owner will place their private data inside of a PyGrid "gateway" that acts as both a data store and a load balancer, distributing work to one or many PyGrid "nodes" which act as workers on that data. Each node has dedicated compute resources with which to train models on behalf of the data scientist. There is also an optional layer on top of a PyGrid gateway called a PyGrid "network" that allows a user to search for available datasets across multiple gateways under the same network. Regardless of presence of a network, a data owner may deploy their PyGrid gateway either to their own privately managed servers, or to a major cloud provider like AWS, GCP, Azure, Heroku, or DigitalOcean.
+For this process to work correctly, the data owner will place their private data inside of a PyGrid "gateway" that acts as both a data store and a load balancer, distributing work to one or many PyGrid "nodes" which act as workers on that data. Each node has dedicated compute resources with which to train models on behalf of the data scientist. There is also an optional layer on top of a PyGrid gateway called a PyGrid "network" that allows a user to search for available tensors across multiple gateways under the same network. Regardless of presence of a network, a data owner may deploy their PyGrid gateway either to their own privately managed servers, or to a major cloud provider like AWS, GCP, Azure, Heroku, or DigitalOcean.
 
-The data owner can create users on their gateway with a variety of preset and custom permissions, as well as designate each user's "privacy budget" (tracked via an "epsilon value") which is used to track how many `get()` requests that particular user has made. This ensures that no one user has complete access to the private dataset of the PyGrid gateway, nor can they make unlimited model training requests. Permissions can be created and assigned at both the user-level and the tensor-level, allowing for smart defaults to be set, and overrides to be assigned on a case-by-case basis. Tensors can be listed as "public" or "private":
+The data owner can create users on their gateway with a variety of preset and custom permissions, as well as designate each user's "privacy budget" (tracked via an "epsilon value") which is used to track how many `get()` requests that particular user has made. This ensures that no one user has complete access to the private tensors of the PyGrid gateway, nor can they make unlimited model training requests. Permissions can be created and assigned at both the user-level and the tensor-level, allowing for smart defaults to be set, and overrides to be assigned on a case-by-case basis. Tensors can be listed as "public" or "private":
 
 - **Public** means they're visible in a gateway or network search and available for training request by any user.
 - **Private** means they're visible in a gateway or network search and may be used to train a model, but the results of the training are disclosed only if the user has appropriate permissions to observe them. If the user does not have permissions, they may submit a request for a modification of their permissions to the data compliance officer.
@@ -38,7 +38,7 @@ Let’s start off by defining a few terms that will be regularly used throughout
 - **Plan** - a serialized list of operations that can be executed by a PyGrid Node
 - **Gateway** - a data store and load balancer that serves as the primary public endpoint for a PyGrid network
 - **Node** - a single server acting as a worker for a PyGrid gateway, where model training takes place
-- **Privacy budget** - the amount of model training requests a user can make on a given dataset
+- **Privacy budget** - the amount of data per user that a data compliance officer can justify leaving their system
 - **Epsilon value** - the name of the value for measuring a user's privacy budget
 
 We will also use this section for defining each of the components of the OpenMined dynamic federated learning system:
@@ -58,54 +58,31 @@ To start, an individual or organization must deploy their own PyGrid network com
 # 2. Deploy this PyGrid network to a cloud provider or private cloud network
 ```
 
-At this point, there is a fully-hosted PyGrid network [running in the cloud](cloud_deployment.md). It's time to host data within that network and create helpful tags so that a data scientist requesting model training can appropriately request only relevant datasets.
+At this point, there is a fully-hosted PyGrid network [running in the cloud](cloud_deployment.md). It's time to host data within that network and create helpful tags so that a data scientist requesting model training can appropriately request only relevant tensors.
 
 ```python
 # 1. Connect to this deployed PyGrid network as an administrator
-# 2. Host a diabetes patient dataset
-# 3. Host a cancer patient dataset
-# 4. Tag each dataset appropriately
+# 2. Host a diabetes patient tensor
+# 3. Host a cancer patient tensor
+# 4. Tag each tensor appropriately
 ```
 
 ### 2. Permission
 
-At this point, we've created our network and are ready to begin creating users and permissions. This may be done only through the PyGrid Admin UI. Since the user interface is simply a series of static files, hosting may be done by cloning the Github project to any file server. If the network administrator prefers, they may also use any of the various one-click deploy buttons in the Github project. Since the UI is separate from the PyGrid application entirely, the scaling concerns are separated. This project is defined in [much more detail here](common/pygrid_admin.md).
+At this point, we've created our network and are ready to begin creating users and permissions. To make this process quicker, we suggest that creating users and assigning permissions is done through the PyGrid Admin UI. For a full overview of user roles and permission, [please visit that sub-roadmap here](common/pygrid_permissions.md). The premise is as such:
 
-Permission may be applied to a user directly. The grid owner will specify which users have access to which private tensors. They also specify that user's privacy budget which gets updated according to each `get()` request the user makes against the gateway. To make managing user permissions easier, the PyGrid Admin also allows you to specify "groups". Groups allow for organizing subsets of users into pre-determined permissions lists. If a user is part of a group, their permissions are determined by that of their group AND their user-specific permissions. For instance, if a group does not have access to a specific private tensor, the grid owner may decide to allow permissions for a specific user in that group to have access to the tensor, but disallow access for the other users in the group.
+- Users are created inside of the PyGrid Gateway and given a base-level of permissions for querying tensors in the database.
+- Data scientists will not be given any UI access in the PyGrid Admin UI, and will be required to interface with the Gateway or Network via a command line or Python Notebook.
+- Tensors may have individual permissions set to them, such as a "public" or "private" status.
+- Data scientists are given access to all public tensors and whatever private tensors an administrator permits. They will have the ability to search all tensors, regardless of their status.
+- Groups may be created to make assigning permissions in batch easier.
+- There are multiple other roles for various Gateway and Network administrators.
 
-It's also worth nothing that there is a separate system of "roles" which strictly relate to administrative access to a PyGrid gateway. All newly created users default to the "User" role, which does not allow for any administrative access to the PyGrid network. The roles are described below, according to their access level from lowest to highest:
-
-#### User
-
-This is the default user role and is reserved for a user that is non-administrative. This is the role which all external data scientists will be assigned to. This role does not grant access to the PyGrid Admin UI.
-
-#### Compliance Officer
-
-The compliance officer role is strictly for users that are allowed to approve and deny tensor requests. They are only allowed to triage requests made to the system. They cannot change settings within the PyGrid gateway, nor can they create new users.
-
-#### Admininstrator
-
-The administrator role has permission to do mostly anything on the PyGrid gateway, including triage tensor `get()` requests, create new users, and change settings. However, they do not have the ability to provision compute resources by horizontally or vertically scaling nodes.
-
-#### Gateway Owner
-
-The gateway owner role has permission to do anything an administrator can do, but they can also add, remove, or modify compute resources by horizontally or vertically scaling nodes.
-
-#### Network Administrator
-
-The network administrator role isn't tied to access control of one specific gateway. Instead, this role allows for a user to add or remove PyGrid gateways from a PyGrid network, if a network has been configured. This user does not have permissions to modify or inspect any of the individual gateways in any way. They only have permission to manage the overall network of gateways.
-
----
-
-It's worth noting that there is no "Network Owner" role. This is to allow for a natural delegation of responsibility, without giving any one user too much control. The "Gateway Owner" is the master of their gateway. The "Network Administrator" is the master of the network, but does not have access to any of the gateways themselves.
-
-Such an organizational example might be that various hospitals host their own gateways, but a data scientist may choose to query multiple different hospitals that are part of the same network. It's important here that the person who runs the network, doesn't run all the hospitals within the network. Permissions are discussed at [much greater detail here](common/pygrid_permissions.md).
+Generally speaking, permissions are highly flexible and can be assigned to users, groups, and tensors. Overrides are made possible in the exact same order of priortity (highest to lowest).
 
 ### 3. Search
 
-Once PyGrid has been hosted, tensors have been uploaded, users have been created, and permissions have been set, data scientists may begin making requests to the gateway. This process begins with a simple search of what datasets the data scientist may be interested in. Once they've searched the gateway and have found a tensor they would like to work with, they may begin provisioning compute resources and start working.
-
-TODO: @iamtrask We need to clear up the differences in this document between datasets and tensors. I'm using those terms interchangibly here and I think I should decide on a more specific usage.
+Once PyGrid has been hosted, tensors have been uploaded, users have been created, and permissions have been set, data scientists may begin making requests to the gateway. This process begins with a simple search of what tensors the data scientist may be interested in. Once they've searched the gateway and have found a tensor they would like to work with, they may begin provisioning compute resources and start working.
 
 ```python
 # 1. Log into the PyGrid gateway
@@ -114,7 +91,7 @@ TODO: @iamtrask We need to clear up the differences in this document between dat
 # 4. Select a tensor from the list and start working
 ```
 
-If additional permissions are needed to select a dataset for training, the data scientist may request permission right in their Jupyter Notebook before continuing on.
+If additional permissions are needed to select a tensor for training, the data scientist may request permission right in their Jupyter Notebook before continuing on.
 
 ```python
 # 1. Log into the PyGrid gateway
@@ -135,7 +112,7 @@ Once they are satisfied with the result, they may call `get()` to make a request
 
 ### 5. Enforce
 
-It's important for a data compliance officer to have control over what data leaves their system. This person's primary job is to read through a model trained on the system, look at the effect that training the model had on their system's privacy leakage, and then determine whether or not the release of this trained model should be allowed. It's also worth nothing that a data scientist who makes a `get()` request for a dataset that exceeds their alotted privacy budget will be automatically denied.
+It's important for a data compliance officer to have control over what data leaves their system. This person's primary job is to read through a model trained on the system, look at the effect that training the model had on their system's privacy leakage, and then determine whether or not the release of this trained model should be allowed. It's also worth nothing that a data scientist who makes a `get()` request for a tensor that exceeds their alotted privacy budget will be automatically denied.
 
 If the the data compliance officer agrees that the privacy leakage is appropriate, they can choose to fulfill the `get()` request and release the trained model back to the data scientist. This is done through the PyGrid Admin UI. Optionally, they may choose to deny this request and the data scientist will be notified of the decision. Currently, the way this decision is communicated between the data compliance officer and the data scientist is arbitrary and determined by the individual relationship of those two individuals. It's outside the scope of this roadmap to prescribe a communication gateway for these individuals. Privacy budgeting is discussed at [much greater detail here](common/privacy_budgeting.md).
 
