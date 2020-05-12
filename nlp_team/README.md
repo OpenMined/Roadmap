@@ -83,12 +83,12 @@ Here are some of the main SyferText features we are working on currently:
 Demo on remote blind tokenization with SyferText.
 
 
-- **(March 19th, 2020)** [GDG Meetup, Reading, UK](https://www.meetup.com/GDG-Reading-Thames-Valley/events/268137223/).
+- **(March 19th, 2020)** [GDG Meetup, Reading, UK](https://www.meetup.com/GDG-Reading-Thames-Valley/events/268137223/). *(Cancelled due to COVID-19)*
 
-Demo on sentiment analysis with SyferText on multiple private datasets. *(Cancelled due to COVID-19)*
+Demo on sentiment analysis with SyferText on multiple private datasets. 
 
 
-- **(May 13th)**: [OpenMined AMA](https://www.youtube.com/channel/UCzoUqDE_OzYo6lGXtsEbOxQ).
+- **(May 13th)**: [OpenMined AMA](https://www.youtube.com/channel/UCzoUqDE_OzYo6lGXtsEbOxQ). *(Cancelled due to COVID-19)*
 
 
 

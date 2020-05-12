@@ -22,7 +22,7 @@ We currently support standard protocols in MPC but would like to extend support 
 We're also working on integrating the CrypTen library for MPC which is developed by Facebook. This is a top priority project of the team, and will allow users to benefit from the massive optimizations of this library which works only with PyTorch.
 </p>
 </details>
-<details><summary><b>Integration of new crypto protocols (FSS, etc)</b></summary>
+<details><summary><b>Integration of new crypto protocols (FSS, Functional Encryption, etc)</b></summary>
 <p>
 We're still integrating new crypto protocols natively in PySyft. This allows us to use them in a wider set of contexts, especially on mobiles and across all kind of computation frameworks. Among the next protocols we can cite Function Secret Sharing which is used in MPC to reduce the number of interactions compared to previous state-of-the-art MPC protocols.
 </p>
@@ -52,10 +52,17 @@ The team leader is [**Théo Ryffel**](https://github.com/LaRiffle). Our team is 
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/H4LL">
-        <img src="https://avatars1.githubusercontent.com/u/46713492?s=240" width="170px;" alt="">
-        <br /><sub><b>Adam James Hall</b></sub></a><br />
-        <sub>SplitNN</sub>
+      <a href="https://github.com/gmuraru">
+        <img src="https://avatars1.githubusercontent.com/u/7805588?s=240" width="170px;" alt="">
+        <br /><sub><b>George Muraru</b></sub></a><br />
+        <sub>CrypTen integration</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/youben11">
+        <img src="https://avatars0.githubusercontent.com/u/21220087?s=240" width="170px;" alt="">
+        <br /><sub><b>Ayoub Benaissa</b></sub></a><br />
+        <sub>CrypTen + TenSEAL</sub>
       </a>
     </td>
     <td align="center">
@@ -68,10 +75,40 @@ The team leader is [**Théo Ryffel**](https://github.com/LaRiffle). Our team is 
   </tr>
   <tr>
     <td align="center">
-      <a href="https://github.com/youben11">
-        <img src="https://avatars0.githubusercontent.com/u/21220087?s=240" width="170px;" alt="">
-        <br /><sub><b>Ayoub Benaissa</b></sub></a><br />
-        <sub>CrypTen integ. + TenSEAL</sub>
+      <a href="https://github.com/Yugandhartripathi">
+        <img src="https://avatars2.githubusercontent.com/u/32102845?s=240" width="170px;" alt="">
+        <br /><sub><b>Yugandhar Tripathi</b></sub></a><br />
+        <sub>Encrypted ML</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/sukhadj">
+        <img src="https://avatars0.githubusercontent.com/u/25997368?s=460" width="170px;" alt="">
+        <br /><sub><b>Sukhad Joshi</b></sub></a><br />
+        <sub>Encrypted ML</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Syzygianinfern0">
+        <img src="https://avatars2.githubusercontent.com/u/31875325?s=460" width="170px;" alt="">
+        <br /><sub><b>S P Sharan</b></sub></a><br />
+        <sub>Core dev in SMPC</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/IamRavikantSingh">
+        <img src="https://avatars2.githubusercontent.com/u/40258150?s=460&v=4" width="170px;" alt="">
+        <br /><sub><b>Ravikant Singh</b></sub></a><br />
+        <sub>Homomorphic Encryption</sub>
+      </a>
+    </td>  
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/philomath213">
+        <img src="https://avatars3.githubusercontent.com/u/20177422?s=460" width="170px;" alt="">
+        <br /><sub><b>Bilal Retiat</b></sub></a><br />
+        <sub>TenSEAL</sub>
       </a>
     </td>
     <td align="center">
@@ -87,16 +124,7 @@ The team leader is [**Théo Ryffel**](https://github.com/LaRiffle). Our team is 
         <br /><sub><b>Ajay Singh</b></sub></a><br />
         <sub>CrypTen integration</sub>
       </a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/gmuraru">
-        <img src="https://avatars1.githubusercontent.com/u/7805588?s=240" width="170px;" alt="">
-        <br /><sub><b>George Muraru</b></sub></a><br />
-        <sub>CrypTen integration</sub>
-      </a>
-    </td>
+    </td>    
     <td align="center">
       <a href="https://github.com/jasopaum">
         <img src="https://avatars2.githubusercontent.com/u/19286277?s=240" width="170px;" alt="">
@@ -104,20 +132,13 @@ The team leader is [**Théo Ryffel**](https://github.com/LaRiffle). Our team is 
         <sub>Plans + Protocols</sub>
       </a>
     </td>
+</tr>
+<tr>
     <td align="center">
-      <a href="https://github.com/Yugandhartripathi">
-        <img src="https://avatars2.githubusercontent.com/u/32102845?s=240" width="170px;" alt="">
-        <br /><sub><b>Yugandhar Tripathi</b></sub></a><br />
-        <sub>Encrypted ML</sub>
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/sukhadj">
-        <img src="https://avatars0.githubusercontent.com/u/25997368?s=460" width="170px;" alt="">
-        <br /><sub><b>Sukhad Joshi</b></sub></a><br />
-        <sub>Encrypted ML</sub>
+      <a href="https://github.com/H4LL">
+        <img src="https://avatars1.githubusercontent.com/u/46713492?s=240" width="170px;" alt="">
+        <br /><sub><b>Adam James Hall</b></sub></a><br />
+        <sub>SplitNN</sub>
       </a>
     </td>
   </tr>
@@ -129,22 +150,22 @@ Learn more about our projects!
 
 <details><summary><a href="./projects/CrypTen.md">CrypTen integration roadmap</a></summary>
 <p>
-Checkout the link
+  <a href="./projects/CrypTen.md">Go to the roadmap</a>
 </p>
 </details>
 <details><summary><a href="https://github.com/OpenMined/SyferText">SyferText</a></summary>
 <p>
-More coming soon
+  <a href="https://github.com/OpenMined/Roadmap/tree/master/nlp_team">Go to the roadmap</a>
 </p>
 </details>
 <details><summary><a href="./projects/TenSEAL.md">TenSEAL roadmap</a></summary>
 <p>
-Checkout the link
+  <a href="./projects/TenSEAL.md">Go to the roadmap</a>
 </p>
 </details>
 <details><summary>Function Secret Sharing</summary>
 <p>
-More coming soon
+  <a href="https://github.com/OpenMined/PySyft/pull/3057/">See initial draft</a>
 </p>
 </details>
 
