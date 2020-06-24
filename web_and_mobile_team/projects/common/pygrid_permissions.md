@@ -8,7 +8,7 @@ In the new permissions system, permissions may be applied to a user directly. Th
 
 To make managing user permissions easier, the PyGrid Admin also allows you to specify "groups". Groups allow for organizing subsets of users into pre-determined permissions lists. If a user is part of a group, their permissions are determined by that of their group AND their user-specific permissions. For instance, if a group does not have access to a specific private tensor, the grid owner may decide to allow permissions for a specific user in that group to have access to the tensor, but disallow access for the other users in the group.
 
-It's also worth nothing that there is a separate system of "roles" which strictly relate to administrative access to a PyGrid Node. All newly created users default to the "User" role, which does not allow for any administrative access to the PyGrid Node or Network. The roles are described below, according to their access level from lowest to highest:
+It's also worth nothing that there is a separate system of "roles" which strictly relate to administrative access to a PyGrid Node or Network. All newly created users default to the "User" role, which does not allow for any administrative access to the PyGrid Node or Network. The roles are described below, according to their access level from lowest to highest:
 
 #### User
 
