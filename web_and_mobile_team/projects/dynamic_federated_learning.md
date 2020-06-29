@@ -1,6 +1,6 @@
 ## Introduction
 
-_Last modified: May 29th, 2020_
+_Last modified: June 29th, 2020_
 
 Dynamic federated learning is one of the primary use-cases of the OpenMined ecosystem. By allowing data scientists to search for and ETL remote tensors, so they can train models on data they literally "cannot see".
 
@@ -120,12 +120,83 @@ If the the data compliance officer agrees that the privacy leakage is appropriat
 
 ### PyGrid
 
-- [INSERT ISSUES HERE](https://google.com)
+#### Reorganization
+
+- Move dynamic FL manager from PyGridNode to PyGrid
+- Allow PyGrid to manage workers on remote machines
+- Create a abstract manager class for both static and dynamic FL
+- Node should be able to request an association, or accept/deny association requests, with a Network
+- Need a general statistic API endpoint that can be requested by Networks with a valid association
+- Namespace all the API endpoints by their intentions
+
+#### Grid Admin
+
+- Create API endpoints for user CRUD operations
+- Create API endpoint for login
+- Create API endpoints for group CRUD operations
+- Create API endpoints for role CRUD operation
+
+#### Privacy budgeting
+
+-
+
+#### Users and permissions
+
+- Create a data model for Users object
+- Create a data model for Groups object
+- Create a data model for Roles object
+
+#### Cloud deployment
+
+- Have the ability to host a PyGrid Node serverless on AWS
+- Have the ability to host a PyGrid Node serverless on GCP
+- Have the ability to host a PyGrid Node serverless on Azure
+- Have the ability to host a PyGrid Worker on AWS
+- Have the ability to host a PyGrid Worker on GCP
+- Have the ability to host a PyGrid Worker on Azure
+
+### PyGridNetwork
+
+#### Reorganization
+
+- Network should be able to request an association, or accept/deny association requests, with a Node
+- Need to be able to get general statistics from PyGrid nodes that a Network is associated with
+
+#### Cloud deployment
+
+- Have the ability to host a PyGrid Network serverless on AWS
+- Have the ability to host a PyGrid Network serverless on GCP
+- Have the ability to host a PyGrid Network serverless on Azure
+
+### Grid Admin
+
+- Need to scaffold out the initial web application
+- Create a login page
+- Create basic API connection class with PyGrid
+- Create user-gating logic for authenticated screens
+- Create the main naviation
+- Design pages for management of Node
+- Design pages for management of Network
+- Design dynamic FL queue page
+- Design dynamic FL dataset page
+- Design dynamic FL users and groups page
+- Design a page where a Network or Node Owner can triage, create, and delete Network/Node association requests
+- Design a page where you can view regularly refreshed statistics of a PyGrid Node (from the Node or Network perspective)
+- Design static FL overview page
+- Design static FL models and plans page
 
 ### PySyft
 
-- [INSERT ISSUES HERE](https://google.com)
+#### Reorganization
 
-### PyGrid Admin UI
+- Move node_client (dynamic FL) to grid folder and rename as dyanmic_fl_client
+- Rename grid_client (static FL) as static_fl_client
+- Move the static FL worker in PySyft out of the grid folder, put it in the workers folder, and rename it static_fl_worker
 
-- [INSERT ISSUES HERE](https://google.com)
+#### Privacy budgeting
+
+-
+
+#### Users and permission
+
+-
