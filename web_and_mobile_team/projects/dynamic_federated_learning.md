@@ -122,12 +122,13 @@ If the the data compliance officer agrees that the privacy leakage is appropriat
 
 #### Reorganization
 
-- Move dynamic FL manager from PyGridNode to PyGrid
-- Allow PyGrid to manage workers on remote machines
-- Create a abstract manager class for both static and dynamic FL
+- [Move dynamic FL manager from PyGridNode to PyGrid](https://github.com/OpenMined/PyGrid/issues/595)
+- [Allow PyGrid to manage workers on remote machines](https://github.com/OpenMined/PyGrid/issues/596)
+- [Create a abstract manager class for both static and dynamic FL](https://github.com/OpenMined/PyGrid/issues/597)
+- [Move database to be associated with the Node, instead of the Worker](https://github.com/OpenMined/PyGrid/issues/598)
 - Node should be able to request an association, or accept/deny association requests, with a Network
 - Need a general statistic API endpoint that can be requested by Networks with a valid association
-- Namespace all the API endpoints by their intentions
+- [Namespace all the API endpoints by their intentions](https://github.com/OpenMined/PyGrid/issues/600)
 
 #### Grid Admin
 
@@ -189,7 +190,7 @@ If the the data compliance officer agrees that the privacy leakage is appropriat
 
 #### Reorganization
 
-- Move node_client (dynamic FL) to grid folder and rename as dyanmic_fl_client
+- Move node_client (dynamic FL) to grid folder and rename as dynamic_fl_client
 - Rename grid_client (static FL) as static_fl_client
 - Move the static FL worker in PySyft out of the grid folder, put it in the workers folder, and rename it static_fl_worker
 
