@@ -1,6 +1,7 @@
 ## NLP Team Sync / July 3rd 2020
 
 ** (RECAP) **
+
 SACHIN
 - Work on completing current PRs.
 - PyGrid testing.
