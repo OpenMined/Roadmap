@@ -1,6 +1,6 @@
 ## Introduction
 
-_Last modified: June 29th, 2020_
+_Last modified: July 8th, 2020_
 
 Dynamic federated learning is one of the primary use-cases of the OpenMined ecosystem. By allowing data scientists to search for and ETL remote tensors, so they can train models on data they literally "cannot see".
 
@@ -126,48 +126,58 @@ If the the data compliance officer agrees that the privacy leakage is appropriat
 - [Allow PyGrid to manage workers on remote machines](https://github.com/OpenMined/PyGrid/issues/596)
 - [Create a abstract manager class for both static and dynamic FL](https://github.com/OpenMined/PyGrid/issues/597)
 - [Move database to be associated with the Node, instead of the Worker](https://github.com/OpenMined/PyGrid/issues/598)
-- Node should be able to request an association, or accept/deny association requests, with a Network
-- Need a general statistic API endpoint that can be requested by Networks with a valid association
 - [Namespace all the API endpoints by their intentions](https://github.com/OpenMined/PyGrid/issues/600)
 
-#### Grid Admin
+#### API for Grid Admin
 
 - Create API endpoints for user CRUD operations
-- Create API endpoint for login
 - Create API endpoints for group CRUD operations
-- Create API endpoints for role CRUD operation
+- Create API endpoints for datasets CRUD operations
+- Create API endpoints for permissions CRUD operations
+- Create API endpoints for job requests CRUD operations
+- Create API endpoints for association requests CRUD operations
+- Create API endpoints for statistics CRUD operations _(only readable by Grid Admin users or Networks with a valid association)_
+- Create API endpoints for infrastructure scaling operations
 
 #### Privacy budgeting
 
 -
 
-#### Users and permissions
+#### Database modeling
 
 - Create a data model for Users object
 - Create a data model for Groups object
-- Create a data model for Roles object
+- Create a data model for Datasets object
+- Create a data model for Permissions object
+- Create a data model for JobRequests object
+- Create a data model for AssociationRequests object
+- Create a data model for Statistics object
 
 #### Cloud deployment
 
-- Have the ability to host a PyGrid Node serverless on AWS
-- Have the ability to host a PyGrid Node serverless on GCP
-- Have the ability to host a PyGrid Node serverless on Azure
-- Have the ability to host a PyGrid Worker on AWS
-- Have the ability to host a PyGrid Worker on GCP
-- Have the ability to host a PyGrid Worker on Azure
+- Have the ability to host a Node serverless on AWS
+- Have the ability to host a Node serverless on GCP
+- Have the ability to host a Node serverless on Azure
+- Have the ability to host a Worker on AWS
+- Have the ability to host a Worker on GCP
+- Have the ability to host a Worker on Azure
 
 ### PyGridNetwork
 
-#### Reorganization
+#### API for Grid Admin
 
-- Network should be able to request an association, or accept/deny association requests, with a Node
-- Need to be able to get general statistics from PyGrid nodes that a Network is associated with
+- Create API endpoints for association requests CRUD operations
+- Create API endpoints for statistics CRUD operations _(only readable on Nodes with a valid association)_
+
+#### Database modeling
+
+- Create a data model for AssociationRequests object
 
 #### Cloud deployment
 
-- Have the ability to host a PyGrid Network serverless on AWS
-- Have the ability to host a PyGrid Network serverless on GCP
-- Have the ability to host a PyGrid Network serverless on Azure
+- Have the ability to host a Network serverless on AWS
+- Have the ability to host a Network serverless on GCP
+- Have the ability to host a Network serverless on Azure
 
 ### Grid Admin
 
@@ -190,9 +200,9 @@ If the the data compliance officer agrees that the privacy leakage is appropriat
 
 #### Reorganization
 
-- Move node_client (dynamic FL) to grid folder and rename as dynamic_fl_client
-- Rename grid_client (static FL) as static_fl_client
-- Move the static FL worker in PySyft out of the grid folder, put it in the workers folder, and rename it static_fl_worker
+- [Move node_client (dynamic FL) to grid folder and rename as dynamic_fl_client](https://github.com/OpenMined/PySyft/pull/3818)
+- [Rename grid_client (static FL) as static_fl_client](https://github.com/OpenMined/PySyft/pull/3818)
+- [Move the static FL worker in PySyft out of the grid folder, put it in the workers folder, and rename it static_fl_worker](https://github.com/OpenMined/PySyft/pull/3818)
 
 #### Privacy budgeting
 
