@@ -118,6 +118,15 @@ If the the data compliance officer agrees that the privacy leakage is appropriat
 
 ## Projects
 
+We currently have the following project "unknowns":
+
+- How will we be deploying the various components of the PyGrid ecosystem (nodes, workers, and networks)?
+- We will be able to leverage serverless deployment for any of the deployable components?
+- How will we be implementing privacy budgeting?
+- What information should a data compliance officer be able to view related to differential privacy in order to make informed decisions?
+- How will search be performed given changes in our roadmap?
+- How will user and tensor permissions be affected given changes in our roadmap?
+
 ### PyGrid
 
 #### Reorganization
@@ -127,11 +136,18 @@ If the the data compliance officer agrees that the privacy leakage is appropriat
 - [Create a abstract manager class for both static and dynamic FL](https://github.com/OpenMined/PyGrid/issues/597)
 - [Move database to be associated with the Node, instead of the Worker](https://github.com/OpenMined/PyGrid/issues/598)
 - [Namespace all the API endpoints by their intentions](https://github.com/OpenMined/PyGrid/issues/600)
+- Separate Worker into a separate repository
+
+#### General
+
+- **TODO**
+- Redo search logic to allow for searching across Datasets and Tensors within _(depends on database modeling and API for grid admin issues below)_
 
 #### API for Grid Admin
 
 - Create API endpoints for user CRUD operations
 - Create API endpoints for group CRUD operations
+- Create API endpoints for tag CRUD operations
 - Create API endpoints for datasets CRUD operations
 - Create API endpoints for permissions CRUD operations
 - Create API endpoints for job requests CRUD operations
@@ -141,12 +157,13 @@ If the the data compliance officer agrees that the privacy leakage is appropriat
 
 #### Privacy budgeting
 
--
+- **TODO**
 
 #### Database modeling
 
 - Create a data model for Users object
 - Create a data model for Groups object
+- Create a data model for Tags object
 - Create a data model for Datasets object
 - Create a data model for Permissions object
 - Create a data model for JobRequests object
@@ -155,9 +172,10 @@ If the the data compliance officer agrees that the privacy leakage is appropriat
 
 #### Cloud deployment
 
-- Have the ability to host a Node serverless on AWS
-- Have the ability to host a Node serverless on GCP
-- Have the ability to host a Node serverless on Azure
+- **TODO**
+- Have the ability to host a Node on AWS
+- Have the ability to host a Node on GCP
+- Have the ability to host a Node on Azure
 - Have the ability to host a Worker on AWS
 - Have the ability to host a Worker on GCP
 - Have the ability to host a Worker on Azure
@@ -175,26 +193,42 @@ If the the data compliance officer agrees that the privacy leakage is appropriat
 
 #### Cloud deployment
 
-- Have the ability to host a Network serverless on AWS
-- Have the ability to host a Network serverless on GCP
-- Have the ability to host a Network serverless on Azure
+- **TODO**
+- Have the ability to host a Network on AWS
+- Have the ability to host a Network on GCP
+- Have the ability to host a Network on Azure
 
 ### Grid Admin
 
-- Need to scaffold out the initial web application
-- Create a login page
-- Create basic API connection class with PyGrid
-- Create user-gating logic for authenticated screens
-- Create the main naviation
+#### Design
+
+- Design login page
+- Design dynamic FL users and groups page
+- Design dynamic FL datasets page
+- Design dynamic FL queue page
 - Design pages for management of Node
 - Design pages for management of Network
-- Design dynamic FL queue page
-- Design dynamic FL dataset page
-- Design dynamic FL users and groups page
-- Design a page where a Network or Node Owner can triage, create, and delete Network/Node association requests
-- Design a page where you can view regularly refreshed statistics of a PyGrid Node (from the Node or Network perspective)
+- Design a page for creating, deleting, and triaging association requests
+- Design a page for viewing Node statistics
 - Design static FL overview page
 - Design static FL models and plans page
+
+#### Development
+
+- Need to scaffold out the initial web application
+- Create basic PyGrid API connection class
+- Add user-gating logic for authenticated screens
+- Add login page
+- Add main naviation
+- Add dynamic FL users and groups page
+- Add dynamic FL datasets page
+- Add dynamic FL queue page
+- Add page for management of Node
+- Add page for management of Network
+- Add page for creating, deleting, and triaging association requests
+- Add page for viewing Node statistics
+- Add static FL overview page
+- Add static FL models and plans page
 
 ### PySyft
 
@@ -206,8 +240,4 @@ If the the data compliance officer agrees that the privacy leakage is appropriat
 
 #### Privacy budgeting
 
--
-
-#### Users and permission
-
--
+- **TODO**
