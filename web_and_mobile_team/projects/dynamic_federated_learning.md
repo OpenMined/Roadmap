@@ -136,7 +136,7 @@ We currently have the following project "unknowns":
 - [Create a abstract manager class for both static and dynamic FL](https://github.com/OpenMined/PyGrid/issues/597)
 - [Move database to be associated with the Node, instead of the Worker](https://github.com/OpenMined/PyGrid/issues/598)
 - [Namespace all the API endpoints by their intentions](https://github.com/OpenMined/PyGrid/issues/600)
-- Separate Worker into a separate repository
+- [Separate Worker into a separate repository](https://github.com/OpenMined/PyGrid/issues/611)
 
 #### General
 
