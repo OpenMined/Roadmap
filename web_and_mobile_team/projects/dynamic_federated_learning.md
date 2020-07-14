@@ -1,6 +1,6 @@
 ## Introduction
 
-_Last modified: June 29th, 2020_
+_Last modified: July 8th, 2020_
 
 Dynamic federated learning is one of the primary use-cases of the OpenMined ecosystem. By allowing data scientists to search for and ETL remote tensors, so they can train models on data they literally "cannot see".
 
@@ -118,6 +118,15 @@ If the the data compliance officer agrees that the privacy leakage is appropriat
 
 ## Projects
 
+We currently have the following project "unknowns":
+
+- How will we be deploying the various components of the PyGrid ecosystem (nodes, workers, and networks)?
+- We will be able to leverage serverless deployment for any of the deployable components?
+- How will we be implementing privacy budgeting?
+- What information should a data compliance officer be able to view related to differential privacy in order to make informed decisions?
+- How will search be performed given changes in our roadmap?
+- How will user and tensor permissions be affected given changes in our roadmap?
+
 ### PyGrid
 
 #### Reorganization
@@ -126,78 +135,109 @@ If the the data compliance officer agrees that the privacy leakage is appropriat
 - [Allow PyGrid to manage workers on remote machines](https://github.com/OpenMined/PyGrid/issues/596)
 - [Create a abstract manager class for both static and dynamic FL](https://github.com/OpenMined/PyGrid/issues/597)
 - [Move database to be associated with the Node, instead of the Worker](https://github.com/OpenMined/PyGrid/issues/598)
-- Node should be able to request an association, or accept/deny association requests, with a Network
-- Need a general statistic API endpoint that can be requested by Networks with a valid association
 - [Namespace all the API endpoints by their intentions](https://github.com/OpenMined/PyGrid/issues/600)
+- [Separate Worker into a separate repository](https://github.com/OpenMined/PyGrid/issues/611)
 
-#### Grid Admin
+#### General
+
+- **TODO**
+- Redo search logic to allow for searching across Datasets and Tensors within _(depends on database modeling and API for grid admin issues below)_
+
+#### API for Grid Admin
 
 - Create API endpoints for user CRUD operations
-- Create API endpoint for login
 - Create API endpoints for group CRUD operations
-- Create API endpoints for role CRUD operation
+- Create API endpoints for tag CRUD operations
+- Create API endpoints for datasets CRUD operations
+- Create API endpoints for permissions CRUD operations
+- Create API endpoints for job requests CRUD operations
+- Create API endpoints for association requests CRUD operations
+- Create API endpoints for statistics CRUD operations _(only readable by Grid Admin users or Networks with a valid association)_
+- Create API endpoints for infrastructure scaling operations
 
 #### Privacy budgeting
 
--
+- **TODO**
 
-#### Users and permissions
+#### Database modeling
 
 - Create a data model for Users object
 - Create a data model for Groups object
-- Create a data model for Roles object
+- Create a data model for Tags object
+- Create a data model for Datasets object
+- Create a data model for Permissions object
+- Create a data model for JobRequests object
+- Create a data model for AssociationRequests object
+- Create a data model for Statistics object
 
 #### Cloud deployment
 
-- Have the ability to host a PyGrid Node serverless on AWS
-- Have the ability to host a PyGrid Node serverless on GCP
-- Have the ability to host a PyGrid Node serverless on Azure
-- Have the ability to host a PyGrid Worker on AWS
-- Have the ability to host a PyGrid Worker on GCP
-- Have the ability to host a PyGrid Worker on Azure
+- **TODO**
+- Have the ability to host a Node on AWS
+- Have the ability to host a Node on GCP
+- Have the ability to host a Node on Azure
+- Have the ability to host a Worker on AWS
+- Have the ability to host a Worker on GCP
+- Have the ability to host a Worker on Azure
 
 ### PyGridNetwork
 
-#### Reorganization
+#### API for Grid Admin
 
-- Network should be able to request an association, or accept/deny association requests, with a Node
-- Need to be able to get general statistics from PyGrid nodes that a Network is associated with
+- Create API endpoints for association requests CRUD operations
+- Create API endpoints for statistics CRUD operations _(only readable on Nodes with a valid association)_
+
+#### Database modeling
+
+- Create a data model for AssociationRequests object
 
 #### Cloud deployment
 
-- Have the ability to host a PyGrid Network serverless on AWS
-- Have the ability to host a PyGrid Network serverless on GCP
-- Have the ability to host a PyGrid Network serverless on Azure
+- **TODO**
+- Have the ability to host a Network on AWS
+- Have the ability to host a Network on GCP
+- Have the ability to host a Network on Azure
 
 ### Grid Admin
 
-- Need to scaffold out the initial web application
-- Create a login page
-- Create basic API connection class with PyGrid
-- Create user-gating logic for authenticated screens
-- Create the main naviation
+#### Design
+
+- Design login page
+- Design dynamic FL users and groups page
+- Design dynamic FL datasets page
+- Design dynamic FL queue page
 - Design pages for management of Node
 - Design pages for management of Network
-- Design dynamic FL queue page
-- Design dynamic FL dataset page
-- Design dynamic FL users and groups page
-- Design a page where a Network or Node Owner can triage, create, and delete Network/Node association requests
-- Design a page where you can view regularly refreshed statistics of a PyGrid Node (from the Node or Network perspective)
+- Design a page for creating, deleting, and triaging association requests
+- Design a page for viewing Node statistics
 - Design static FL overview page
 - Design static FL models and plans page
+
+#### Development
+
+- Need to scaffold out the initial web application
+- Create basic PyGrid API connection class
+- Add user-gating logic for authenticated screens
+- Add login page
+- Add main naviation
+- Add dynamic FL users and groups page
+- Add dynamic FL datasets page
+- Add dynamic FL queue page
+- Add page for management of Node
+- Add page for management of Network
+- Add page for creating, deleting, and triaging association requests
+- Add page for viewing Node statistics
+- Add static FL overview page
+- Add static FL models and plans page
 
 ### PySyft
 
 #### Reorganization
 
-- Move node_client (dynamic FL) to grid folder and rename as dynamic_fl_client
-- Rename grid_client (static FL) as static_fl_client
-- Move the static FL worker in PySyft out of the grid folder, put it in the workers folder, and rename it static_fl_worker
+- [Move node_client (dynamic FL) to grid folder and rename as dynamic_fl_client](https://github.com/OpenMined/PySyft/pull/3818)
+- [Rename grid_client (static FL) as static_fl_client](https://github.com/OpenMined/PySyft/pull/3818)
+- [Move the static FL worker in PySyft out of the grid folder, put it in the workers folder, and rename it static_fl_worker](https://github.com/OpenMined/PySyft/pull/3818)
 
 #### Privacy budgeting
 
--
-
-#### Users and permission
-
--
+- **TODO**
