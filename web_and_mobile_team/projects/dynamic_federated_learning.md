@@ -145,28 +145,35 @@ We currently have the following project "unknowns":
 
 #### Database modeling
 
-- [Create a data model for Users object](https://github.com/OpenMined/PyGrid/issues/630)
-- [Create a data model for Roles object](https://github.com/OpenMined/PyGrid/issues/631)
-- [Create a data model for Groups object](https://github.com/OpenMined/PyGrid/issues/632)
-- Create a data model for Tags object
-- Create a data model for Datasets object
-- Create a data model for Permissions object
-- Create a data model for JobRequests object
-- Create a data model for AssociationRequests object
-- Create a data model for Statistics object
+- [Create a data model for Users object (Node)](https://github.com/OpenMined/PyGrid/issues/630)
+- [Create a data model for Roles object (Node)](https://github.com/OpenMined/PyGrid/issues/631)
+- [Create a data model for Groups object (Node)](https://github.com/OpenMined/PyGrid/issues/632)
+- Create a data model for Tags object (Node)
+- Create a data model for Datasets object (Node)
+- Create a data model for Permissions object (Node)
+- Create a data model for JobRequests object (Node)
+- Create a data model for AssociationRequests object (Node)
+- Create a data model for Statistics object (Node)
+- [Create a data model for Users object (Network)](https://github.com/OpenMined/PyGrid/issues/638)
+- [Create a data model for Roles object (Network)](https://github.com/OpenMined/PyGrid/issues/637)
+- Create a data model for AssociationRequests object (Network)
 
 #### API for Grid Admin
 
-- [Create API endpoints for user CRUD operations](https://github.com/OpenMined/PyGrid/issues/633)
-- [Create API endpoints for role CRUD operations](https://github.com/OpenMined/PyGrid/issues/634)
-- [Create API endpoints for group CRUD operations](https://github.com/OpenMined/PyGrid/issues/635)
-- Create API endpoints for tag CRUD operations
-- Create API endpoints for datasets CRUD operations
-- Create API endpoints for permissions CRUD operations
-- Create API endpoints for job requests CRUD operations
-- Create API endpoints for association requests CRUD operations
-- Create API endpoints for statistics CRUD operations _(only readable by Grid Admin users or Networks with a valid association)_
-- Create API endpoints for infrastructure scaling operations
+- [Create API endpoints for user CRUD operations (Node)](https://github.com/OpenMined/PyGrid/issues/633)
+- [Create API endpoints for role CRUD operations (Node)](https://github.com/OpenMined/PyGrid/issues/634)
+- [Create API endpoints for group CRUD operations (Node)](https://github.com/OpenMined/PyGrid/issues/635)
+- Create API endpoints for tag CRUD operations (Node)
+- Create API endpoints for datasets CRUD operations (Node)
+- Create API endpoints for permissions CRUD operations (Node)
+- Create API endpoints for job requests CRUD operations (Node)
+- Create API endpoints for association requests CRUD operations (Node)
+- Create API endpoints for statistics CRUD operations _(only readable by Grid Admin users or Networks with a valid association)_ (Node)
+- Create API endpoints for infrastructure scaling operations (Node)
+- [Create API endpoints for user CRUD operations (Network)](https://github.com/OpenMined/PyGrid/issues/639)
+- [Create API endpoints for role CRUD operations (Network)](https://github.com/OpenMined/PyGrid/issues/640)
+- Create API endpoints for association requests CRUD operations (Network)
+- Create API endpoints for statistics CRUD operations _(only readable on Nodes with a valid association)_ (Network)
 
 #### Privacy budgeting
 
@@ -181,25 +188,6 @@ We currently have the following project "unknowns":
 - Have the ability to host a Worker on AWS
 - Have the ability to host a Worker on GCP
 - Have the ability to host a Worker on Azure
-
-### PyGridNetwork
-
-#### Database modeling
-
-- [Create a data model for Users object](https://github.com/OpenMined/PyGrid/issues/638)
-- [Create a data model for Roles object](https://github.com/OpenMined/PyGrid/issues/637)
-- Create a data model for AssociationRequests object
-
-#### API for Grid Admin
-
-- [Create API endpoints for user CRUD operations](https://github.com/OpenMined/PyGrid/issues/639)
-- [Create API endpoints for role CRUD operations](https://github.com/OpenMined/PyGrid/issues/640)
-- Create API endpoints for association requests CRUD operations
-- Create API endpoints for statistics CRUD operations _(only readable on Nodes with a valid association)_
-
-#### Cloud deployment
-
-- **TODO**
 - Have the ability to host a Network on AWS
 - Have the ability to host a Network on GCP
 - Have the ability to host a Network on Azure
