@@ -143,10 +143,23 @@ We currently have the following project "unknowns":
 - **TODO**
 - Redo search logic to allow for searching across Datasets and Tensors within _(depends on database modeling and API for grid admin issues below)_
 
+#### Database modeling
+
+- [Create a data model for Users object](https://github.com/OpenMined/PyGrid/issues/630)
+- [Create a data model for Roles object](https://github.com/OpenMined/PyGrid/issues/631)
+- [Create a data model for Groups object](https://github.com/OpenMined/PyGrid/issues/632)
+- Create a data model for Tags object
+- Create a data model for Datasets object
+- Create a data model for Permissions object
+- Create a data model for JobRequests object
+- Create a data model for AssociationRequests object
+- Create a data model for Statistics object
+
 #### API for Grid Admin
 
-- Create API endpoints for user CRUD operations
-- Create API endpoints for group CRUD operations
+- [Create API endpoints for user CRUD operations](https://github.com/OpenMined/PyGrid/issues/633)
+- [Create API endpoints for role CRUD operations](https://github.com/OpenMined/PyGrid/issues/634)
+- [Create API endpoints for group CRUD operations](https://github.com/OpenMined/PyGrid/issues/635)
 - Create API endpoints for tag CRUD operations
 - Create API endpoints for datasets CRUD operations
 - Create API endpoints for permissions CRUD operations
@@ -158,17 +171,6 @@ We currently have the following project "unknowns":
 #### Privacy budgeting
 
 - **TODO**
-
-#### Database modeling
-
-- Create a data model for Users object
-- Create a data model for Groups object
-- Create a data model for Tags object
-- Create a data model for Datasets object
-- Create a data model for Permissions object
-- Create a data model for JobRequests object
-- Create a data model for AssociationRequests object
-- Create a data model for Statistics object
 
 #### Cloud deployment
 
@@ -182,14 +184,18 @@ We currently have the following project "unknowns":
 
 ### PyGridNetwork
 
-#### API for Grid Admin
-
-- Create API endpoints for association requests CRUD operations
-- Create API endpoints for statistics CRUD operations _(only readable on Nodes with a valid association)_
-
 #### Database modeling
 
+- [Create a data model for Users object](https://github.com/OpenMined/PyGridNetwork/issues/47)
+- [Create a data model for Roles object](https://github.com/OpenMined/PyGridNetwork/issues/48)
 - Create a data model for AssociationRequests object
+
+#### API for Grid Admin
+
+- Create API endpoints for user CRUD operations
+- Create API endpoints for role CRUD operations
+- Create API endpoints for association requests CRUD operations
+- Create API endpoints for statistics CRUD operations _(only readable on Nodes with a valid association)_
 
 #### Cloud deployment
 
