@@ -186,14 +186,14 @@ We currently have the following project "unknowns":
 
 #### Database modeling
 
-- [Create a data model for Users object](https://github.com/OpenMined/PyGridNetwork/issues/47)
-- [Create a data model for Roles object](https://github.com/OpenMined/PyGridNetwork/issues/48)
+- [Create a data model for Users object](https://github.com/OpenMined/PyGrid/issues/638)
+- [Create a data model for Roles object](https://github.com/OpenMined/PyGrid/issues/637)
 - Create a data model for AssociationRequests object
 
 #### API for Grid Admin
 
-- Create API endpoints for user CRUD operations
-- Create API endpoints for role CRUD operations
+- [Create API endpoints for user CRUD operations](https://github.com/OpenMined/PyGrid/issues/639)
+- [Create API endpoints for role CRUD operations](https://github.com/OpenMined/PyGrid/issues/640)
 - Create API endpoints for association requests CRUD operations
 - Create API endpoints for statistics CRUD operations _(only readable on Nodes with a valid association)_
 
