@@ -146,32 +146,32 @@ We currently have the following project "unknowns":
 - [Node: Create a data model for Users object](https://github.com/OpenMined/PyGrid/issues/630)
 - [Node: Create a data model for Roles object](https://github.com/OpenMined/PyGrid/issues/631)
 - [Node: Create a data model for Groups object](https://github.com/OpenMined/PyGrid/issues/632)
-- Create a data model for Tags object (Node)
-- Create a data model for Datasets object (Node)
-- Create a data model for Permissions object (Node)
-- Create a data model for JobRequests object (Node)
-- Create a data model for AssociationRequests object (Node)
-- Create a data model for Statistics object (Node)
+- Node: Create a data model for Tags object
+- Node: Create a data model for Datasets object
+- Node: Create a data model for Permissions object
+- Node: Create a data model for JobRequests object
+- Node: Create a data model for AssociationRequests object
+- Node: Create a data model for Statistics object
 - [Network: Create a data model for Users object](https://github.com/OpenMined/PyGrid/issues/638)
 - [Network: Create a data model for Roles object](https://github.com/OpenMined/PyGrid/issues/637)
-- Create a data model for AssociationRequests object (Network)
+- Network: Create a data model for AssociationRequests object
 
 #### API for Grid Admin
 
 - [Node: Create API endpoints for user CRUD operations](https://github.com/OpenMined/PyGrid/issues/633)
 - [Node: Create API endpoints for role CRUD operations](https://github.com/OpenMined/PyGrid/issues/634)
 - [Node: Create API endpoints for group CRUD operations](https://github.com/OpenMined/PyGrid/issues/635)
-- Create API endpoints for tag CRUD operations (Node)
-- Create API endpoints for datasets CRUD operations (Node)
-- Create API endpoints for permissions CRUD operations (Node)
-- Create API endpoints for job requests CRUD operations (Node)
-- Create API endpoints for association requests CRUD operations (Node)
-- Create API endpoints for statistics CRUD operations _(only readable by Grid Admin users or Networks with a valid association)_ (Node)
-- Create API endpoints for infrastructure scaling operations (Node)
+- Node: Create API endpoints for tag CRUD operations
+- Node: Create API endpoints for datasets CRUD operations
+- Node: Create API endpoints for permissions CRUD operations
+- Node: Create API endpoints for job requests CRUD operations
+- Node: Create API endpoints for association requests CRUD operations
+- Node: Create API endpoints for statistics CRUD operations _(only readable by Grid Admin users or Networks with a valid association)_
+- Node: Create API endpoints for infrastructure scaling operations
 - [Network: Create API endpoints for user CRUD operations](https://github.com/OpenMined/PyGrid/issues/639)
 - [Network: Create API endpoints for role CRUD operations](https://github.com/OpenMined/PyGrid/issues/640)
-- Create API endpoints for association requests CRUD operations (Network)
-- Create API endpoints for statistics CRUD operations _(only readable on Nodes with a valid association)_ (Network)
+- Network: Create API endpoints for association requests CRUD operations
+- Network: Create API endpoints for statistics CRUD operations _(only readable on Nodes with a valid association)_
 
 #### Privacy budgeting
 
