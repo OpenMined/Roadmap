@@ -37,7 +37,3 @@ The network administrator role isn't tied to access control of one specific node
 #### Network Owner
 
 The network owner role isn't tied to access control of one specific Node. Instead, this role allows for a user to add or remove PyGrid Nodes from a PyGrid network, if a network has been configured. This user does not have permissions to modify or inspect any of the individual Nodes in any way. They only have permission to manage the overall network of Nodes.
-
----
-
-It's worth noting that there is no "Network Owner" role. This is to allow for a natural delegation of responsibility, without giving any one user too much control. The "Node Owner" is the master of their Node. The "Network Administrator" is the master of the network, but does not have access to any of the Nodes themselves.
