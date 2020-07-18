@@ -1,6 +1,6 @@
 ## Introduction
 
-_Last modified: July 8th, 2020_
+_Last modified: July 18th, 2020_
 
 Dynamic federated learning is one of the primary use-cases of the OpenMined ecosystem. By allowing data scientists to search for and ETL remote tensors, so they can train models on data they literally "cannot see".
 
@@ -143,24 +143,24 @@ We currently have the following project "unknowns":
 
 #### Database modeling
 
-- [Create a data model for Users object (Node)](https://github.com/OpenMined/PyGrid/issues/630)
-- [Create a data model for Roles object (Node)](https://github.com/OpenMined/PyGrid/issues/631)
-- [Create a data model for Groups object (Node)](https://github.com/OpenMined/PyGrid/issues/632)
+- [Node: Create a data model for Users object](https://github.com/OpenMined/PyGrid/issues/630)
+- [Node: Create a data model for Roles object](https://github.com/OpenMined/PyGrid/issues/631)
+- [Node: Create a data model for Groups object](https://github.com/OpenMined/PyGrid/issues/632)
 - Create a data model for Tags object (Node)
 - Create a data model for Datasets object (Node)
 - Create a data model for Permissions object (Node)
 - Create a data model for JobRequests object (Node)
 - Create a data model for AssociationRequests object (Node)
 - Create a data model for Statistics object (Node)
-- [Create a data model for Users object (Network)](https://github.com/OpenMined/PyGrid/issues/638)
-- [Create a data model for Roles object (Network)](https://github.com/OpenMined/PyGrid/issues/637)
+- [Network: Create a data model for Users object](https://github.com/OpenMined/PyGrid/issues/638)
+- [Network: Create a data model for Roles object](https://github.com/OpenMined/PyGrid/issues/637)
 - Create a data model for AssociationRequests object (Network)
 
 #### API for Grid Admin
 
-- [Create API endpoints for user CRUD operations (Node)](https://github.com/OpenMined/PyGrid/issues/633)
-- [Create API endpoints for role CRUD operations (Node)](https://github.com/OpenMined/PyGrid/issues/634)
-- [Create API endpoints for group CRUD operations (Node)](https://github.com/OpenMined/PyGrid/issues/635)
+- [Node: Create API endpoints for user CRUD operations](https://github.com/OpenMined/PyGrid/issues/633)
+- [Node: Create API endpoints for role CRUD operations](https://github.com/OpenMined/PyGrid/issues/634)
+- [Node: Create API endpoints for group CRUD operations](https://github.com/OpenMined/PyGrid/issues/635)
 - Create API endpoints for tag CRUD operations (Node)
 - Create API endpoints for datasets CRUD operations (Node)
 - Create API endpoints for permissions CRUD operations (Node)
@@ -168,8 +168,8 @@ We currently have the following project "unknowns":
 - Create API endpoints for association requests CRUD operations (Node)
 - Create API endpoints for statistics CRUD operations _(only readable by Grid Admin users or Networks with a valid association)_ (Node)
 - Create API endpoints for infrastructure scaling operations (Node)
-- [Create API endpoints for user CRUD operations (Network)](https://github.com/OpenMined/PyGrid/issues/639)
-- [Create API endpoints for role CRUD operations (Network)](https://github.com/OpenMined/PyGrid/issues/640)
+- [Network: Create API endpoints for user CRUD operations](https://github.com/OpenMined/PyGrid/issues/639)
+- [Network: Create API endpoints for role CRUD operations](https://github.com/OpenMined/PyGrid/issues/640)
 - Create API endpoints for association requests CRUD operations (Network)
 - Create API endpoints for statistics CRUD operations _(only readable on Nodes with a valid association)_ (Network)
 
@@ -179,16 +179,24 @@ We currently have the following project "unknowns":
 
 #### Cloud deployment
 
-- **TODO**
-- Have the ability to host a Node on AWS
-- Have the ability to host a Node on GCP
-- Have the ability to host a Node on Azure
-- Have the ability to host a Worker on AWS
-- Have the ability to host a Worker on GCP
-- Have the ability to host a Worker on Azure
-- Have the ability to host a Network on AWS
-- Have the ability to host a Network on GCP
-- Have the ability to host a Network on Azure
+- [Node: Deploy serverfull environment on AWS](https://github.com/OpenMined/PyGrid/issues/642)
+- [Worker: Deploy serverfull environment on AWS](https://github.com/OpenMined/PyGrid/issues/643)
+- [Node: Deploy serverless environment on AWS](https://github.com/OpenMined/PyGrid/issues/644)
+- [Add, remove, and modify Workers on a Node for AWS](https://github.com/OpenMined/PyGrid/issues/657)
+- [Network: Deploy serverfull environment on AWS](https://github.com/OpenMined/PyGrid/issues/645)
+- [Network: Deploy serverless environment on AWS](https://github.com/OpenMined/PyGrid/issues/646)
+- [Node: Deploy serverfull environment on GCP](https://github.com/OpenMined/PyGrid/issues/647)
+- [Worker: Deploy serverfull environment on GCP](https://github.com/OpenMined/PyGrid/issues/648)
+- [Node: Deploy serverless environment on GCP](https://github.com/OpenMined/PyGrid/issues/649)
+- [Add, remove, and modify Workers on a Node for GCP](https://github.com/OpenMined/PyGrid/issues/658)
+- [Network: Deploy serverfull environment on GCP](https://github.com/OpenMined/PyGrid/issues/650)
+- [Network: Deploy serverless environment on GCP](https://github.com/OpenMined/PyGrid/issues/651)
+- [Node: Deploy serverfull environment on Azure](https://github.com/OpenMined/PyGrid/issues/652)
+- [Worker: Deploy serverfull environment on Azure](https://github.com/OpenMined/PyGrid/issues/653)
+- [Node: Deploy serverless environment on Azure](https://github.com/OpenMined/PyGrid/issues/654)
+- [Add, remove, and modify Workers on a Node for Azure](https://github.com/OpenMined/PyGrid/issues/659)
+- [Network: Deploy serverfull environment on Azure](https://github.com/OpenMined/PyGrid/issues/655)
+- [Network: Deploy serverless environment on Azure](https://github.com/OpenMined/PyGrid/issues/656)
 
 ### Grid Admin
 
