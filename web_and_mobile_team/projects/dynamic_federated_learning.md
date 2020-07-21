@@ -1,6 +1,6 @@
 ## Introduction
 
-_Last modified: July 8th, 2020_
+_Last modified: July 18th, 2020_
 
 Dynamic federated learning is one of the primary use-cases of the OpenMined ecosystem. By allowing data scientists to search for and ETL remote tensors, so they can train models on data they literally "cannot see".
 
@@ -10,8 +10,8 @@ For this process to work correctly, the data owner will place their private data
 
 The data owner can create users on their Node with a variety of preset and custom permissions, as well as designate each user's "privacy budget" (tracked via an "epsilon value") which is used to track how many `get()` requests that particular user has made. This ensures that no one user has complete access to the private tensors of the PyGrid Node, nor can they make unlimited model training requests. Permissions can be created and assigned at both the user-level and the tensor-level, allowing for smart defaults to be set, and overrides to be assigned on a case-by-case basis. Tensors can be listed as "public" or "private":
 
-- **Public** means they're visible in a Node or network search and available for training request by any user.
-- **Private** means they're visible in a Node or network search and may be used to train a model, but the results of the training are disclosed only if the user has appropriate permissions to observe them. If the user does not have permissions, they may submit a request for a modification of their permissions to the data compliance officer.
+- **Public** means they're visible in a Node or Network search and available for download by any user.
+- **Private** means they're visible in a Node or Network search, but are not available for download (`.get()`) by a user without additional permission. This involves filing a training or inference request.
 
 Of course, it would be difficult to manage multiple users, permissions, and model training requests through a command line or Python notebook. This creates the need for a small user interface to be developed to aide in the management of a private PyGrid Node. We call this user interface the "PyGrid Admin" and it will serve as the secondary component of this project's roadmap. An administrator will be able to manage their entire Node through this white-labeled user interface, which will be hosted as a standalone single-page application separate from the PyGrid API itself. Developing the PyGrid Admin as a standalone front-end application allows for the PyGrid Node infrastructure to be scaled separate from the needs of running a user interface. Thus, the PyGrid Admin may be hosted on a variety of cloud-based file server platforms like AWS's S3, GCP's Cloud Storage, Microsoft's Azure Blob Storage, Netlify, or other such static asset hosting solutions.
 
@@ -120,8 +120,6 @@ If the the data compliance officer agrees that the privacy leakage is appropriat
 
 We currently have the following project "unknowns":
 
-- How will we be deploying the various components of the PyGrid ecosystem (nodes, workers, and networks)?
-- We will be able to leverage serverless deployment for any of the deployable components?
 - How will we be implementing privacy budgeting?
 - What information should a data compliance officer be able to view related to differential privacy in order to make informed decisions?
 - How will search be performed given changes in our roadmap?
@@ -136,67 +134,69 @@ We currently have the following project "unknowns":
 - [Create a abstract manager class for both static and dynamic FL](https://github.com/OpenMined/PyGrid/issues/597)
 - [Move database to be associated with the Node, instead of the Worker](https://github.com/OpenMined/PyGrid/issues/598)
 - [Namespace all the API endpoints by their intentions](https://github.com/OpenMined/PyGrid/issues/600)
-- [Separate Worker into a separate repository](https://github.com/OpenMined/PyGrid/issues/611)
+- [Combine Network, Node, and Worker to create a monorepo](https://github.com/OpenMined/PyGrid/issues/611)
 
 #### General
 
 - **TODO**
 - Redo search logic to allow for searching across Datasets and Tensors within _(depends on database modeling and API for grid admin issues below)_
 
+#### Database modeling
+
+- [Node: Create a data model for Users object](https://github.com/OpenMined/PyGrid/issues/630)
+- [Node: Create a data model for Roles object](https://github.com/OpenMined/PyGrid/issues/631)
+- [Node: Create a data model for Groups object](https://github.com/OpenMined/PyGrid/issues/632)
+- Node: Create a data model for Tags object
+- Node: Create a data model for Datasets object
+- Node: Create a data model for Permissions object
+- Node: Create a data model for JobRequests object
+- Node: Create a data model for AssociationRequests object
+- Node: Create a data model for Statistics object
+- [Network: Create a data model for Users object](https://github.com/OpenMined/PyGrid/issues/638)
+- [Network: Create a data model for Roles object](https://github.com/OpenMined/PyGrid/issues/637)
+- Network: Create a data model for AssociationRequests object
+
 #### API for Grid Admin
 
-- Create API endpoints for user CRUD operations
-- Create API endpoints for group CRUD operations
-- Create API endpoints for tag CRUD operations
-- Create API endpoints for datasets CRUD operations
-- Create API endpoints for permissions CRUD operations
-- Create API endpoints for job requests CRUD operations
-- Create API endpoints for association requests CRUD operations
-- Create API endpoints for statistics CRUD operations _(only readable by Grid Admin users or Networks with a valid association)_
-- Create API endpoints for infrastructure scaling operations
+- [Node: Create API endpoints for user CRUD operations](https://github.com/OpenMined/PyGrid/issues/633)
+- [Node: Create API endpoints for role CRUD operations](https://github.com/OpenMined/PyGrid/issues/634)
+- [Node: Create API endpoints for group CRUD operations](https://github.com/OpenMined/PyGrid/issues/635)
+- Node: Create API endpoints for tag CRUD operations
+- Node: Create API endpoints for datasets CRUD operations
+- Node: Create API endpoints for permissions CRUD operations
+- Node: Create API endpoints for job requests CRUD operations
+- Node: Create API endpoints for association requests CRUD operations
+- Node: Create API endpoints for statistics CRUD operations _(only readable by Grid Admin users or Networks with a valid association)_
+- Node: Create API endpoints for infrastructure scaling operations
+- [Network: Create API endpoints for user CRUD operations](https://github.com/OpenMined/PyGrid/issues/639)
+- [Network: Create API endpoints for role CRUD operations](https://github.com/OpenMined/PyGrid/issues/640)
+- Network: Create API endpoints for association requests CRUD operations
+- Network: Create API endpoints for statistics CRUD operations _(only readable on Nodes with a valid association)_
 
 #### Privacy budgeting
 
 - **TODO**
 
-#### Database modeling
-
-- Create a data model for Users object
-- Create a data model for Groups object
-- Create a data model for Tags object
-- Create a data model for Datasets object
-- Create a data model for Permissions object
-- Create a data model for JobRequests object
-- Create a data model for AssociationRequests object
-- Create a data model for Statistics object
-
 #### Cloud deployment
 
-- **TODO**
-- Have the ability to host a Node on AWS
-- Have the ability to host a Node on GCP
-- Have the ability to host a Node on Azure
-- Have the ability to host a Worker on AWS
-- Have the ability to host a Worker on GCP
-- Have the ability to host a Worker on Azure
-
-### PyGridNetwork
-
-#### API for Grid Admin
-
-- Create API endpoints for association requests CRUD operations
-- Create API endpoints for statistics CRUD operations _(only readable on Nodes with a valid association)_
-
-#### Database modeling
-
-- Create a data model for AssociationRequests object
-
-#### Cloud deployment
-
-- **TODO**
-- Have the ability to host a Network on AWS
-- Have the ability to host a Network on GCP
-- Have the ability to host a Network on Azure
+- [Node: Deploy serverfull environment on AWS](https://github.com/OpenMined/PyGrid/issues/642)
+- [Worker: Deploy serverfull environment on AWS](https://github.com/OpenMined/PyGrid/issues/643)
+- [Node: Deploy serverless environment on AWS](https://github.com/OpenMined/PyGrid/issues/644)
+- [Add, remove, and modify Workers on a Node for AWS](https://github.com/OpenMined/PyGrid/issues/657)
+- [Network: Deploy serverfull environment on AWS](https://github.com/OpenMined/PyGrid/issues/645)
+- [Network: Deploy serverless environment on AWS](https://github.com/OpenMined/PyGrid/issues/646)
+- [Node: Deploy serverfull environment on GCP](https://github.com/OpenMined/PyGrid/issues/647)
+- [Worker: Deploy serverfull environment on GCP](https://github.com/OpenMined/PyGrid/issues/648)
+- [Node: Deploy serverless environment on GCP](https://github.com/OpenMined/PyGrid/issues/649)
+- [Add, remove, and modify Workers on a Node for GCP](https://github.com/OpenMined/PyGrid/issues/658)
+- [Network: Deploy serverfull environment on GCP](https://github.com/OpenMined/PyGrid/issues/650)
+- [Network: Deploy serverless environment on GCP](https://github.com/OpenMined/PyGrid/issues/651)
+- [Node: Deploy serverfull environment on Azure](https://github.com/OpenMined/PyGrid/issues/652)
+- [Worker: Deploy serverfull environment on Azure](https://github.com/OpenMined/PyGrid/issues/653)
+- [Node: Deploy serverless environment on Azure](https://github.com/OpenMined/PyGrid/issues/654)
+- [Add, remove, and modify Workers on a Node for Azure](https://github.com/OpenMined/PyGrid/issues/659)
+- [Network: Deploy serverfull environment on Azure](https://github.com/OpenMined/PyGrid/issues/655)
+- [Network: Deploy serverless environment on Azure](https://github.com/OpenMined/PyGrid/issues/656)
 
 ### Grid Admin
 
