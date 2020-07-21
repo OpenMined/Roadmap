@@ -130,9 +130,7 @@ We currently have the following project "unknowns":
 #### Reorganization
 
 - [Move dynamic FL manager from PyGridNode to PyGrid](https://github.com/OpenMined/PyGrid/issues/595)
-- [Allow PyGrid to manage workers on remote machines](https://github.com/OpenMined/PyGrid/issues/596)
 - [Create a abstract manager class for both static and dynamic FL](https://github.com/OpenMined/PyGrid/issues/597)
-- [Move database to be associated with the Node, instead of the Worker](https://github.com/OpenMined/PyGrid/issues/598)
 - [Namespace all the API endpoints by their intentions](https://github.com/OpenMined/PyGrid/issues/600)
 - [Combine Network, Node, and Worker to create a monorepo](https://github.com/OpenMined/PyGrid/issues/611)
 
