@@ -1,9 +1,10 @@
 # NLP Team
-The NLP Team, in collaboration with the [Crypto Team](https://github.com/OpenMined/Roadmap/tree/master/crypto_team), is on a mission to help bring privacy-preserving NLP to life. [SyferText](https://github.com/OpenMined/SyferText) is the library the team is currently building in an effort to create the first production-ready solution leveraging [PySyft](https://github.com/OpenMined/PySyft) to enable Natural Language Process that protects data and models' privacy.
+The NLP Team, in collaboration with the [Crypto Team](https://github.com/OpenMined/Roadmap/tree/master/crypto_team), is on a mission to help bring privacy-preserving NLP to production. [SyferText](https://github.com/OpenMined/SyferText) is the library the team is currently building in an effort to create the first production-ready solution leveraging [PySyft](https://github.com/OpenMined/PySyft) to enable Natural Language Process that protects data and models' privacy.
 
 ## Roadmap (2020)
 
 1. Building SyferText with production in mind.
+  - Release SyferText 0.1.0 which enables deploying pipelines to PyGrid and using them for inference.Check out the milestone [here](https://github.com/OpenMined/SyferText/milestone/2)
   - Identifying at least three companies with a potential interest in using SyferText.
   - Building a collaboration around a real-world usecase with at least one company.
 
@@ -11,6 +12,7 @@ The NLP Team, in collaboration with the [Crypto Team](https://github.com/OpenMin
 
 ## Team
 
+<br>
 <table>
   <tr>
     <td align="center">
@@ -21,59 +23,64 @@ The NLP Team, in collaboration with the [Crypto Team](https://github.com/OpenMin
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/dzlab">
-        <img src="https://avatars0.githubusercontent.com/u/1645304?s=400&v=4" width="170px;" alt="Bachir Chihani avatar">
-        <br /><sub><b>Bachir Chihani</b></sub></a><br />
-        <sub>OM NLP Team / Contributor</sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/MarcioPorto">
-        <img src="https://avatars1.githubusercontent.com/u/6521281?s=400&v=4" width="170px;" alt="Marcio Porto avatar">
-        <br /><sub><b>Márcio Porto</b></sub></a><br />
-        <sub>OM NLP team / Contributor</sub>
-      </a>
-    </td>
-    <td align="center">
       <a href="https://github.com/Nilanshrajput">
         <img src="https://avatars0.githubusercontent.com/u/28673745?s=400&u=4573311779fc3cc924670e3e02108e35350c1f25&v=4"  width="170px;" alt="Nilansh Rajput avatar">
         <br /><sub><b>Nilansh Rajput</b></sub></a><br />
-        <sub>OM NLP team / Contributor</sub>
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/sachin-101">
-        <img src="https://avatars1.githubusercontent.com/u/44168164?s=400&u=df1c9d775a3312cacd4b330f469773e23260eb28&v=4"  width="170px;" alt="Sachin Kumar avatar">
-        <br /><sub><b>Sachin Kumar</b></sub></a><br />
-        <sub>OM NLP team / Contributor</sub>
+        <sub>OM NLP team / Core Dev</sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/bicycleman15">
         <img src="https://avatars0.githubusercontent.com/u/47978882?s=400&u=521e48efe1a9a652f4449f64278b690aa27dfe03&v=4"  width="170px;" alt="Jatin Prakash avatar">
         <br /><sub><b>Jatin Prakash</b></sub></a><br />
-        <sub>OM NLP team / Contributor</sub>
+        <sub>OM NLP team / Core Dev</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/sachin-101">
+        <img src="https://avatars1.githubusercontent.com/u/44168164?s=400&u=df1c9d775a3312cacd4b330f469773e23260eb28&v=4"  width="170px;" alt="Sachin Kumar avatar">
+        <br /><sub><b>Sachin Kumar</b></sub></a><br />
+        <sub>OM NLP team / Core Dev</sub>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/dzlab">
+        <img src="https://avatars0.githubusercontent.com/u/1645304?s=400&v=4" width="170px;" alt="Bachir Chihani avatar">
+        <br /><sub><b>Bachir Chihani</b></sub></a><br />
+        <sub>OM NLP Team / Core Dev</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/MarcioPorto">
+        <img src="https://avatars1.githubusercontent.com/u/6521281?s=400&v=4" width="170px;" alt="Marcio Porto avatar">
+        <br /><sub><b>Márcio Porto</b></sub></a><br />
+        <sub>OM NLP team / Core Dev</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/AntonioLopardo">
+        <img src="https://avatars3.githubusercontent.com/u/8061862?s=400&u=55d2022e2c47cfd0fd7a5e620e124a63f5a0e085&v=4"  width="170px;" alt="Antonio Lopardo avatar">
+        <br /><sub><b>Antonio Lopardo</b></sub></a><br />
+        <sub>OM NLP team / Documentation</sub>
       </a>
     </td>
   </tr>
   
   
 </table>
-
+<br>
 
 ## Short-Term Goals 
 
 Here are some of the main SyferText features we are working on currently:
 
-1. PyGrid integration.
+1. The ability to deploy/load a pipeline to/from PyGrid and use it for inference.
 
 2. Validate that such concurrent training on two datasets can boost performance compared to pretraining on one and fine tuning on the other. 
 
 3. The ability to create word embedding from multiple private datasets.
-
-4. The ability to dump/load a language model with all of its pipes to/from disk. 
 
 
 ## Events
@@ -88,13 +95,19 @@ Demo on remote blind tokenization with SyferText.
 Demo on sentiment analysis with SyferText on multiple private datasets. 
 
 
-- **(May 13th)**: [OpenMined AMA](https://www.youtube.com/channel/UCzoUqDE_OzYo6lGXtsEbOxQ). *(Cancelled due to COVID-19)*
+- **(May 13th, 2020)**: [OpenMined AMA](https://www.youtube.com/channel/UCzoUqDE_OzYo6lGXtsEbOxQ). *(Cancelled due to COVID-19)*
+
+
+- **(June 17th, 2020)**: [OpenMined AMA](https://www.youtube.com/watch?v=gtwOPxxJ5F4&t=2907s). 
+
+
+- **(July 8th, 2020)**: [OpenMined Paris Meetup](https://www.youtube.com/watch?v=KrjyfZDERsI&t=5040s). 
 
 
 
 ## Joining the Team
 
-If our roadmap gets you excited about SyferText and if you share our vision in building an NLP library that respects and protects data privacy, you can start contributing to any of OpenMined's [open source projects](https://github.com/OpenMined) (including SyferText). Once you merge your first PR in any of these projects,  you can apply to  join our team by filling out [this form](https://forms.gle/1t5Bvj1FFpvFEt2P9).
+If our roadmap gets you excited about SyferText and if you share our vision in building an NLP library that respects and protects data privacy, you can start contributing to any of OpenMined's [open source projects](https://github.com/OpenMined) (including SyferText). Once you merge your first PR in any of these projects,  you can apply to  join our team by filling out [this form](https://docs.google.com/forms/d/1QwjTk9RcCGRlXssDPYhqojrqYj2OMynyXsTLnPLTGes/edit).
 
 ## Building Collaborations
 
@@ -104,7 +117,9 @@ If you think that SyferText, in its current state or by adding more features, co
 
 ## Contact Us
 
-You can reach out to us by contacting Alan on one of the following channels:
+To get support in using this library, please join the **#lib_syfertext** Slack channel. If you’d like to follow along with any code changes to the library, please join the **#code_syfertext** Slack channel. [Click here to join our Slack community!](https://slack.openmined.org)
+
+You can reach out to Alan on one of the following channels:
 
  [LinkedIn](https://www.linkedin.com/in/ala-aboudib/) | [Slack](https://app.slack.com/client/T6963A864/DDKH3SXKL/user_profile/UDKH3SH8S) | [Twitter](https://twitter.com/alan_aboudib)
 
