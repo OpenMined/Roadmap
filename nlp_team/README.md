@@ -76,7 +76,7 @@ The NLP Team, in collaboration with the [Crypto Team](https://github.com/OpenMin
 
 Here are some of the main SyferText features we are working on currently:
 
-1. The ability to deploy/load a pipeline to/from PyGrid and use it for inference.
+1. The ability to deploy/load a pipeline to/from PyGrid and use it for inference ([SyferText 0.1.0](https://github.com/OpenMined/SyferText/milestone/2)).
 
 2. Validate that such concurrent training on two datasets can boost performance compared to pretraining on one and fine tuning on the other. 
 
@@ -100,10 +100,16 @@ Demo on sentiment analysis with SyferText on multiple private datasets.
 
 - **(June 17th, 2020)**: [OpenMined AMA](https://www.youtube.com/watch?v=gtwOPxxJ5F4&t=2907s). 
 
+SyferText vision and encrypted sentiment analyzer demo.
+
 
 - **(July 8th, 2020)**: [OpenMined Paris Meetup](https://www.youtube.com/watch?v=KrjyfZDERsI&t=5040s). 
 
+SyferText vision and encrypted sentiment analyzer demo.
 
+- **(September 16th, 2020 at 5:30PM GMT)**: OpenMined Paris Meetup. 
+
+Introducing SyferText 0.1.0
 
 ## Joining the Team
 
