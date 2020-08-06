@@ -107,7 +107,7 @@ SyferText vision and encrypted sentiment analyzer demo.
 
 SyferText vision and encrypted sentiment analyzer demo.
 
-- **(September 16th, 2020 at 5:30PM GMT)**: OpenMined Paris Meetup. 
+- **(September 16th, 2020 at 5:30PM GMT)**: OpenMined AMA. 
 
 Introducing SyferText 0.1.0
 
