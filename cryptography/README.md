@@ -1,4 +1,6 @@
-# Crypto Team
+# Cryptography Team
+
+Welcome to the cryptography team!
 
 ## Our current projects
 
@@ -29,7 +31,7 @@ We're still integrating new crypto protocols natively in PySyft, including Funct
 
 <details><summary><b>Integration of the FALCON protocol</b></summary>
 <p>
-We're still integrating new crypto protocols natively in PySyft, including FALCON, an optimized version of SecureNN! Checkout the progress <a href="https://github.com/OpenMined/PySyft/milestone/13">here</a>!
+We're still integrating new crypto protocols natively in PySyft, including FALCON, an optimized version of SecureNN! Checkout the progress <a href="https://github.com/OpenMined/PySyft/milestone/14">here</a>!
 </p>
 </details>
 
@@ -45,19 +47,16 @@ Closely related to our focus on production, we want to demonstrate the utility o
 </p>
 </details>
 
-## Team Members
+## Teams
 
-The team leader is [**Théo Ryffel**](https://github.com/LaRiffle). Our team is comprised of the following people.
+The cryptography teams are coordinated by [**Théo Ryffel**](https://github.com/LaRiffle).
+
+### [Secure Multi-Party Computation](./smpc)
+
+This team is led by [**George Muraru**](https://github.com/gmuraru)
 
 <table>
   <tr>
-    <td align="center">
-      <a href="https://github.com/LaRiffle">
-        <img src="https://avatars3.githubusercontent.com/u/12446521?s=240" width="170px;" alt="Théo Ryffel">
-        <br /><sub><b>Théo Ryffel</b></sub></a><br />
-        <sub>Team Lead</sub>
-      </a>
-    </td>
     <td align="center">
       <a href="https://github.com/gmuraru">
         <img src="https://avatars1.githubusercontent.com/u/7805588?s=240" width="170px;" alt="">
@@ -66,10 +65,10 @@ The team leader is [**Théo Ryffel**](https://github.com/LaRiffle). Our team is 
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/youben11">
-        <img src="https://avatars0.githubusercontent.com/u/21220087?s=240" width="170px;" alt="">
-        <br /><sub><b>Ayoub Benaissa</b></sub></a><br />
-        <sub>CrypTen + TenSEAL</sub>
+      <a href="https://github.com/LaRiffle">
+        <img src="https://avatars3.githubusercontent.com/u/12446521?s=240" width="170px;" alt="Théo Ryffel">
+        <br /><sub><b>Théo Ryffel</b></sub></a><br />
+        <sub>Team Lead</sub>
       </a>
     </td>
     <td align="center">
@@ -79,8 +78,6 @@ The team leader is [**Théo Ryffel**](https://github.com/LaRiffle). Our team is 
         <sub>SyferText</sub>
       </a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/Yugandhartripathi">
         <img src="https://avatars2.githubusercontent.com/u/32102845?s=240" width="170px;" alt="">
@@ -88,29 +85,23 @@ The team leader is [**Théo Ryffel**](https://github.com/LaRiffle). Our team is 
         <sub>Encrypted ML</sub>
       </a>
     </td>
-    <td align="center">
-      <a href="https://github.com/sukhadj">
-        <img src="https://avatars0.githubusercontent.com/u/25997368?s=460" width="170px;" alt="">
-        <br /><sub><b>Sukhad Joshi</b></sub></a><br />
-        <sub>Encrypted ML</sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/Syzygianinfern0">
-        <img src="https://avatars2.githubusercontent.com/u/31875325?s=460" width="170px;" alt="">
-        <br /><sub><b>S P Sharan</b></sub></a><br />
-        <sub>Core dev in SMPC</sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/IamRavikantSingh">
-        <img src="https://avatars2.githubusercontent.com/u/40258150?s=460&v=4" width="170px;" alt="">
-        <br /><sub><b>Ravikant Singh</b></sub></a><br />
-        <sub>Homomorphic Encryption</sub>
-      </a>
-    </td>  
   </tr>
+</table>
+
+### [Homomorphic Encryption](./he)
+
+This team is led by [**Ayoub Benaissa**](https://github.com/youben11)
+
+
+<table>
   <tr>
+    <td align="center">
+      <a href="https://github.com/youben11">
+        <img src="https://avatars0.githubusercontent.com/u/21220087?s=240" width="170px;" alt="">
+        <br /><sub><b>Ayoub Benaissa</b></sub></a><br />
+        <sub>CrypTen + TenSEAL</sub>
+      </a>
+    </td>
     <td align="center">
       <a href="https://github.com/philomath213">
         <img src="https://avatars3.githubusercontent.com/u/20177422?s=460" width="170px;" alt="">
@@ -119,62 +110,47 @@ The team leader is [**Théo Ryffel**](https://github.com/LaRiffle). Our team is 
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/andrelmfarias">
-        <img src="https://avatars2.githubusercontent.com/u/43521764?s=240" width="170px;" alt="">
-        <br /><sub><b>André Farias</b></sub></a><br />
-        <sub>Encrypted Lin. Reg.</sub>
+      <a href="https://github.com/IamRavikantSingh">
+        <img src="https://avatars2.githubusercontent.com/u/40258150?s=460&v=4" width="170px;" alt="">
+        <br /><sub><b>Ravikant Singh</b></sub></a><br />
+        <sub>BFV scheme (PySyft)</sub>
       </a>
-    </td>
+    </td>  
+  </tr>
+</table>
+
+
+### [Functional Encryption](./fe)
+
+This team is led by [**S P Sharan**](https://github.com/Syzygianinfern0)
+
+<table>
+  <tr>
     <td align="center">
-      <a href="https://github.com/ajnovice">
-        <img src="https://avatars3.githubusercontent.com/u/3927652?s=240" width="170px;" alt="">
-        <br /><sub><b>Ajay Singh</b></sub></a><br />
-        <sub>CrypTen integration</sub>
-      </a>
-    </td>    
-    <td align="center">
-      <a href="https://github.com/jasopaum">
-        <img src="https://avatars2.githubusercontent.com/u/19286277?s=240" width="170px;" alt="">
-        <br /><sub><b>Jason Paumier</b></sub></a><br />
-        <sub>Plans + Protocols</sub>
-      </a>
-    </td>
-</tr>
-<tr>
-    <td align="center">
-      <a href="https://github.com/H4LL">
-        <img src="https://avatars1.githubusercontent.com/u/46713492?s=240" width="170px;" alt="">
-        <br /><sub><b>Adam James Hall</b></sub></a><br />
-        <sub>SplitNN</sub>
+      <a href="https://github.com/Syzygianinfern0">
+        <img src="https://avatars2.githubusercontent.com/u/31875325?s=460" width="170px;" alt="">
+        <br /><sub><b>S P Sharan</b></sub></a><br />
+        <sub>Core dev in SMPC</sub>
       </a>
     </td>
   </tr>
 </table>
 
-## Projects
 
-Learn more about our projects!
+### [Private Set Intersection](./psi)
 
-<details><summary><a href="./projects/CrypTen.md">CrypTen integration roadmap</a></summary>
-<p>
-  <a href="./projects/CrypTen.md">Go to the roadmap</a>
-</p>
-</details>
-<details><summary><a href="https://github.com/OpenMined/SyferText">SyferText</a></summary>
-<p>
-  <a href="https://github.com/OpenMined/Roadmap/tree/master/nlp_team">Go to the roadmap</a>
-</p>
-</details>
-<details><summary><a href="./projects/TenSEAL.md">TenSEAL roadmap</a></summary>
-<p>
-  <a href="./projects/TenSEAL.md">Go to the roadmap</a>
-</p>
-</details>
-<details><summary>Function Secret Sharing</summary>
-<p>
-  <a href="https://github.com/OpenMined/PySyft/pull/3057/">See initial draft</a>
-</p>
-</details>
+This team is led by [**Michael Höh**](https://www.linkedin.com/in/michael-hoeh/)
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/michael-hoeh/">
+        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQE_K_Ga31Mekg/profile-displayphoto-shrink_200_200/0?e=1602720000&v=beta&t=Ehev1hXvGRyeLYtdhFmQ5xBHg7pD-aJiE-w3GcpVbAI" width="170px;" alt="">
+        <br /><sub><b>Michael Höh</b></sub></a><br />
+        <sub>PSI Team Lead</sub>
+      </a>
+  </tr>
+</table>
 
 
 ## Weekly Meetings
@@ -185,12 +161,13 @@ We have weekly meetings that are currently private, [but we take detailed notes 
 
 ### Want to join?
 
-If you're already a contributor to PySyft, and if you're interested to to work on crypto related use cases, you should definitely join us!
+If you are interested to to work on cryptography related use cases, you should definitely join us!
 
-*[Apply to the crypto team!](https://docs.google.com/forms/d/1T6MJ21V1lb7aEr4ilZOTYQXzxXP6KbpLumZVmTZMSuY/edit)*
+*[Apply to the cryptography team!](https://forms.gle/BWmYQJrCwqe1m3ex5)*
 
 ### Have questions?
-- [**@Théo Ryffel** on Slack](https://app.slack.com/client/T6963A864/C69RB18LA/user_profile/UA2LD4PHS)
-- [**@theo-ryffel** on Linkedin](https://www.linkedin.com/in/theo-ryffel/)
-- [**@theoryffel** on Twitter](https://twitter.com/theoryffel)
-- Email: theo [at] openmined.org
+
+Reach us on [Slack](http://slack.openmined.org/)!
+
+Or on Twitter: [**@theoryffel**](https://twitter.com/theoryffel) [**@y0uben11**](https://twitter.com/y0uben11) [**@GeorgeMuraru**](https://twitter.com/GeorgeMuraru) [**@michaelhoeh**](https://twitter.com/michaelhoeh) 
+
