@@ -29,7 +29,7 @@ We're still integrating new crypto protocols natively in PySyft, including Funct
 
 <details><summary><b>Integration of the FALCON protocol</b></summary>
 <p>
-We're still integrating new crypto protocols natively in PySyft, including FALCON, an optimized version of SecureNN! Checkout the progress <a href="https://github.com/OpenMined/PySyft/milestone/13">here</a>!
+We're still integrating new crypto protocols natively in PySyft, including FALCON, an optimized version of SecureNN! Checkout the progress <a href="https://github.com/OpenMined/PySyft/milestone/14">here</a>!
 </p>
 </details>
 
