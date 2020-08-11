@@ -115,7 +115,16 @@ This team is led by [**Ayoub Benaissa**](https://github.com/youben11)
         <br /><sub><b>Ravikant Singh</b></sub></a><br />
         <sub>BFV scheme (PySyft)</sub>
       </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/bcebere">
+        <img src="https://avatars0.githubusercontent.com/u/1623754?s=460&v=4" width="170px;" alt="">
+        <br /><sub><b>Bogdan Cebere</b></sub></a><br />
+        <sub>Homomorphic Encryption</sub>
+        <sub>TenSEAL</sub>
+      </a>
     </td>  
+
   </tr>
 </table>
 
@@ -170,4 +179,3 @@ If you are interested to to work on cryptography related use cases, you should d
 Reach us on [Slack](http://slack.openmined.org/)!
 
 Or on Twitter: [**@theoryffel**](https://twitter.com/theoryffel) [**@y0uben11**](https://twitter.com/y0uben11) [**@GeorgeMuraru**](https://twitter.com/GeorgeMuraru) [**@michaelhoeh**](https://twitter.com/michaelhoeh) 
-
