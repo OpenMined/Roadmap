@@ -107,6 +107,11 @@ SyferText vision and encrypted sentiment analyzer demo.
 
 SyferText vision and encrypted sentiment analyzer demo.
 
+
+- **(July 29th, 2020)**: [MLH Fellowship talk](https://www.youtube.com/watch?v=F36Mak1hdlo). 
+
+About SyferText and my Open Source Contribution Experience with OpenMined
+
 - **(September 16th, 2020 at 5:30PM GMT)**: OpenMined AMA. 
 
 Introducing SyferText 0.1.0
