@@ -195,6 +195,7 @@ We currently have the following project "unknowns":
 - [Add, remove, and modify Workers on a Node for Azure](https://github.com/OpenMined/PyGrid/issues/659)
 - [Network: Deploy serverfull environment on Azure](https://github.com/OpenMined/PyGrid/issues/655)
 - [Network: Deploy serverless environment on Azure](https://github.com/OpenMined/PyGrid/issues/656)
+- [Create a basic CLI for deployment](https://github.com/OpenMined/PyGrid/issues/699)
 
 ### Grid Admin
 
