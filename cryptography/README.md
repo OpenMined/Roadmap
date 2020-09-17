@@ -109,13 +109,13 @@ This team is led by [**George Muraru**](https://github.com/gmuraru)
   </tr>
   <tr>
     <td align="center">
-      <a href="https://github.com/abogaziah">
+      <a href="https://github.com/omershlo">
         <img src="https://avatars3.githubusercontent.com/u/2446179?s=460&u=56801fbae185bb7f58d339d0a4fc4288f0ab697f&v=4" width="170px;" alt="">
         <br/><sub><b>Omer Shlomovits</b></sub></a><br/>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/omershlo">
+      <a href="https://github.com/marload">
         <img src="https://avatars0.githubusercontent.com/u/39186433?s=460&u=eabfd79a99109239b61412089f86f83cc2bacf0b&v=4" width="170px;" alt="">
         <br/><sub><b>Wansoo Kim</b></sub></a><br/>
       </a>
@@ -159,7 +159,6 @@ This team is led by [**Ayoub Benaissa**](https://github.com/youben11)
         <sub>TenSEAL</sub>
       </a>
     </td>  
-
   </tr>
 </table>
 
