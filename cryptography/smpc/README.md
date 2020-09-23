@@ -72,7 +72,7 @@ The SMPC team has a weekly meeting every Thursday, at 15:00 CET Time.
     <td align="center">
       <a href="https://github.com/theAkhileshRai">
         <img src="https://avatars2.githubusercontent.com/u/26843971?s=460&u=61e7b58dc21439976840585a0fe810c95fa2d07f&v=4" width="170px;" alt="">
-        <br/><sub><b>Wansoo Kim</b></sub></a><br/>
+        <br/><sub><b>Akhilesh Rai</b></sub></a><br/>
       </a>
     </td>
   </tr>
