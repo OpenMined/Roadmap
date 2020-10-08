@@ -79,4 +79,7 @@ The SMPC team has a weekly meeting every Thursday, at 15:00 CET Time.
 </table>
 
 ## Overview
- * ### [Meetings](./meetings)
+
+* ### [Meetings](./meetings)
+
+* ### [Playground](./playground)
