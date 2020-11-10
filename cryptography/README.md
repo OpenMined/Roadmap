@@ -10,28 +10,28 @@ We're also working on integrating the CrypTen library for MPC which is developed
 </p>
 </details>
 
-<details><summary><b>Integration of SEAL in ML with <a href="https://github.com/OpenMined/tenseal">TenSEAL</a></b></summary>
+<details><summary><b><a href="https://github.com/OpenMined/tenseal">TenSEAL</a> and integration in PySyft</b></summary>
 <p>
-We currently support standard protocols in MPC but would like to extend support for Homomorphic Encryption and other protocols (like Functional Encryption), to allow researchers to use any of them and to compare them for their usecase. In particular, we will provide support for the 1st class HE library SEAL built by Microsoft, through a dedicated library named TenSEAL which adds the abstraction of Tensor on top of SEAL. This will be DL framework agnostic.
+We currently support standard protocols in SMPC but would like to extend support for Homomorphic Encryption and other protocols (like Functional Encryption), to allow researchers to use any of them and to compare them for their usecase. We have built TenSEAL, which wraps the 1st class HE library SEAL built by Microsoft, in a dedicated library that adds the abstraction of Tensor on top of SEAL. This library is DL framework agnostic, and is currently being integrated with PySyft.
 <b>Read the <a href="./projects/TenSEAL.md">project Roadmap</a>!</b>
 </p>
 </details>
 
-<details><summary><b>Integration of the Function Secret Sharing protocol</b></summary>
+<details><summary><b><a href="https://github.com/OpenMined/sycret">Sycret</a>, the Rust lib for Function Secret Sharing</b></summary>
 <p>
-We're still integrating new crypto protocols natively in PySyft. This allows us to use them in a wider set of contexts, especially on mobiles and across all kind of computation frameworks. Among the next protocols we are working on Function Secret Sharing which is used in MPC to reduce the number of interactions compared to previous state-of-the-art MPC protocols. Checkout the progress <a href="https://github.com/OpenMined/PySyft/milestone/12">here</a>!
-</p>
-</details>
-
-<details><summary><b>Integration of Functional Encryption</b></summary>
-<p>
-We're still integrating new crypto protocols natively in PySyft, including Functional Encryption, which allows to compute over encrypted data and do the decryption without any interaction! More info here: https://github.com/OpenMined/PySyft/issues/3108. 
+We're still integrating new crypto protocols natively in PySyft. This allows us to use them in a wider set of contexts, especially on mobiles and across all kind of computation frameworks. AAmong the most fascinating protocols, we are working on Function Secret Sharing which is used in SMPC to reduce the number of interactions compared to previous state-of-the-art SMPC protocols. Checkout the progress <a href="https://github.com/OpenMined/sycret">here</a>!
 </p>
 </details>
 
 <details><summary><b>Integration of the FALCON protocol</b></summary>
 <p>
 We're still integrating new crypto protocols natively in PySyft, including FALCON, an optimized version of SecureNN! Checkout the progress <a href="https://github.com/OpenMined/PySyft/milestone/14">here</a>!
+</p>
+</details>
+
+<details><summary><b>Integration of Functional Encryption</b></summary>
+<p>
+We're still integrating new crypto protocols natively in PySyft, including Functional Encryption, which allows to compute over encrypted data and do the decryption without any interaction! More info here: https://github.com/OpenMined/PySyft/issues/3108. 
 </p>
 </details>
 
