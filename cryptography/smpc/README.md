@@ -1,6 +1,6 @@
 # Secure Multi-Party Computation Team
 
-The SMPC team has a weekly meeting every Thursday, at 15:00 CET Time.
+The SMPC team has a weekly meeting every Thursday, at 16:30 UTC Time.
 
 ## Members
 
@@ -73,6 +73,20 @@ The SMPC team has a weekly meeting every Thursday, at 15:00 CET Time.
       <a href="https://github.com/theAkhileshRai">
         <img src="https://avatars2.githubusercontent.com/u/26843971?s=460&u=61e7b58dc21439976840585a0fe810c95fa2d07f&v=4" width="170px;" alt="">
         <br/><sub><b>Akhilesh Rai</b></sub></a><br/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/tholop">
+        <img src="https://avatars3.githubusercontent.com/u/32133147?s=460&u=350a58538c983237c837bbb5ab6eb2665f04442a&v=4" width="170px;" alt="">
+        <br/><sub><b>Pierre Tholoniat</b></sub></a><br/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/NiWaRe">
+        <img src="https://avatars2.githubusercontent.com/u/13786323?s=460&u=20804e8ec35a6c19d1c5043fb26b1d4c99641e00&v=4" width="170px;" alt="">
+        <br/><sub><b>Pierre Tholoniat</b></sub></a><br/>
       </a>
     </td>
   </tr>
