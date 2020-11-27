@@ -86,7 +86,7 @@ The SMPC team has a weekly meeting every Thursday, at 16:30 UTC Time.
     <td align="center">
       <a href="https://github.com/NiWaRe">
         <img src="https://avatars2.githubusercontent.com/u/13786323?s=460&u=20804e8ec35a6c19d1c5043fb26b1d4c99641e00&v=4" width="170px;" alt="">
-        <br/><sub><b>Pierre Tholoniat</b></sub></a><br/>
+        <br/><sub><b>Nicolas Remerscheid</b></sub></a><br/>
       </a>
     </td>
   </tr>
