@@ -3,9 +3,6 @@
 Welcome to the homomorphic encryption team!
 
 
-## Projects
-TODO
-
 ## Team Members
 
 This team is led by [**Ayoub Benaissa**](https://github.com/youben11)
@@ -17,45 +14,38 @@ This team is led by [**Ayoub Benaissa**](https://github.com/youben11)
       <a href="https://github.com/youben11">
         <img src="https://avatars0.githubusercontent.com/u/21220087?s=260" width="170px;" alt="">
         <br /><sub><b>Ayoub Benaissa</b></sub></a><br />
-        <sub>Team Lead</sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/philomath213">
-        <img src="https://avatars3.githubusercontent.com/u/20177422?s=460" width="170px;" alt="">
-        <br /><sub><b>Bilal Retiat</b></sub></a><br />
-        <sub>TenSEAL</sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/bcebere">
         <img src="https://avatars0.githubusercontent.com/u/1623754?s=460" width="170px;" alt="">
         <br /><sub><b>Bogdan Cebere</b></sub></a><br />
-        <sub>TenSEAL</sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/dhuynh95">
-        <img src="https://avatars0.githubusercontent.com/u/36925557?s=460" width="170px;" alt="">
-        <br /><sub><b>Daniel Huynh</b></sub></a><br />
-        <sub>Homomorphic Encryption</sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/IanQS">
-        <img src="https://avatars3.githubusercontent.com/u/6968573?s=460" width="170px;" alt="">
-        <br /><sub><b>Ian Quah</b></sub></a><br />
-        <sub>Homomorphic Encryption</sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/IamRavikantSingh">
         <img src="https://avatars2.githubusercontent.com/u/40258150?s=460" width="170px;" alt="">
         <br /><sub><b>Ravikant Singh</b></sub></a><br />
-        <sub>BFV scheme (PySyft)</sub>
       </a>
     </td>
-
+    <td align="center">
+      <a href="https://github.com/dhuynh95">
+        <img src="https://avatars0.githubusercontent.com/u/36925557?s=460" width="170px;" alt="">
+        <br /><sub><b>Daniel Huynh</b></sub></a><br />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Archies09">
+        <img src="https://avatars0.githubusercontent.com/u/74363671?s=460" width="170px;" alt="">
+        <br /><sub><b>Achintya Desai</b></sub></a><br />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Aftab201">
+        <img src="https://avatars2.githubusercontent.com/u/61902090?s=460" width="170px;" alt="">
+        <br /><sub><b>Aftab Akram</b></sub></a><br />
+      </a>
+    </td>
   </tr>
 </table>
 
